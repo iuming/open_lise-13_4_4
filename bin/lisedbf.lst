@@ -1,0 +1,36 @@
+
+Filename:          c:\user\c\lise_pp_7\lisepp_install\install\bin\lise.dbf
+Header length:     737
+Number of fields:  22
+Version:           dBASE III
+Updated:           08/12/104
+Number of records: 3178
+Record length:     192
+
+
+        FILE STRUCTURE
+
+  # FIELD NAME TYPE  LEN   DEC
+--------------------------------
+  1 INDEX        N    7     0
+  2 A            N    6     0
+  3 EL           C    4     0
+  4 Z            N    5     0
+  5 MASS_EXCES   C   12     0
+  6 BINDING_EN   C   13     0
+  7 BETA-DECAY   C    9     0
+  8 S(2N)        C    9     0
+  9 S(2P)        C    9     0
+ 10 Q(A)         C    9     0
+ 11 S(N)         C    9     0
+ 12 S(P)         C    9     0
+ 13 T1_2         C    9     0
+ 14 N14          C    9     0
+ 15 D_ME         C    9     0
+ 16 D_BE         C    9     0
+ 17 D_BETA       C    9     0
+ 18 D_S(2N)      C    9     0
+ 19 D_S(2P)      C    9     0
+ 20 D_Q(A)       C    9     0
+ 21 D_S(N)       C    9     0
+ 22 D_S(P)       C    9     0

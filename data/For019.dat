@@ -1,0 +1,9 @@
+
+ Element = QUAD
+ Element = QUAD
+ Element = DIPO
+ Element = POLE
+ Element = POLE
+ Element = FOCL
+ Element = SENT
+ all elements read in

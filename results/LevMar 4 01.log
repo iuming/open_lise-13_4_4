@@ -1,0 +1,35 @@
+Jacob: No,  Box: Yes
+Low Bounds:+1  +1  +1  
+Upp Bounds:+9  +9  +9  
+
+-----------------------------------
+==>  Results for Meyer's (reformulated) problem(4):
+Levenberg-Marquardt returned 100 in 100 iter, reason 3
+Solution: 2.481896  6.181307  3.502223  
+
+Options info:
+0: 1.000e-03	mu
+1: 1.000e-15	epsilon1  ||J^T e||_inf
+2: 1.300e-15	epsilon2  ||Dp||_2
+3: 1.000e-20	epsilon3  ||e||_2
+4: 1.400e-06	delta      aprrox.step
+
+Minimization info:
+0: 1.308e+03 	||e||_2 at initial p
+1: 8.795e-05 	||e||_2
+2: 1.262e-03 	||J^T e||_inf
+3: 3.875e-09 	||Dp||_2
+4: 4.207e-08 	mu/max[J^T J]_ii
+5: 100 		# iterations
+6: 3 		reason for terminating
+7: 507 		# function evaluations
+8: 100 		# Jacobian evaluations
+9: 100 		# linear systems solved, i.e. # attempts for reducing error
+
+Termination reason: 3 - stopped by itmax
+
+Covariance of the fit :
++4.835741e-03 -1.624530e-03 -5.481425e-04 
+-1.624530e-03 +5.460641e-04 +1.843514e-04 
+-5.481425e-04 +1.843514e-04 +6.226932e-05 
+

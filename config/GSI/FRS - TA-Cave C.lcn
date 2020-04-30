@@ -1,0 +1,666 @@
+Version 7.4.102
+
+{============================= Main Part ======================================}
+[general]
+                    File = \\w2kfilesvb\FRS$Root\Weick\Eigene Dateien\LISE\config\GSI\FRS - TA-Cave C.lcn
+                    Date = 11-05-2005
+                    Time = 00:21:32
+                   Title = GSI FRS - TA to S8 and Cave C
+          BlockStructure = DSWMDMSMMWDMSDMSMMDM
+
+[OpticsBeam]
+                      BX = 1                    (±)mm            ; one-half the horisontal beam extent (x)
+                      BT = 5                    (±)mrad          ; one-half the horisontal beam divergence(x')
+                      BY = 1.5                  (±)mm            ; one-half the vertical beam extent (y)
+                      BF = 3.33                 (±)mrad          ; one-half the vertical beam divergence (y')
+                      BL = 0                    (±)mm            
+                      BD = 0.05                 (±)%             ; one-half of the momentum spread (dp/p)
+                  AngleX = 0                    mrad             ; beam respect to the spectrometer axis
+                  AngleY = 0                    mrad             ; beam respect to the spectrometer axis
+            Scheme Angle =   0                  degrees          
+
+[SlitsBeforeTarget]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,50.00,50.0,50.00,50.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,50.00,50.0,50.00,50.0               ; joint,Bottom,B-limit,Top,T-limit
+
+
+{============================= BLOCK D1 - Dipole ======================================}
+
+[D1_General]
+                    Name = D1,1                                  ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 18.183700            m                ; Length block for optical blocks
+             Before_Quad = 3                                     ; number of quadrupoles before optic device
+              After_Quad = 2                                     ; number of quadrupoles after  optic device
+             QA_DontDraw = 0
+                     ZmQ = 0                                     ;  Z - Q  = charge state settings
+        Calibration file = GSI\FRS_D1.cal
+
+[D1_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,100.00,100.0,100.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[D1_optics]
+                    row1 = -7.8020e-01,-1.3700e-02,+0.0000e+00,+0.0000e+00,+0.0000e+00,+2.1486e+01
+                    row2 = +1.6440e-01,-1.2789e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.6259e+00
+                    row3 = +0.0000e+00,+0.0000e+00,-3.2582e+00,+3.8732e+00,+0.0000e+00,+0.0000e+00
+                    row4 = +0.0000e+00,+0.0000e+00,-2.3539e-01,-2.7080e-02,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[D1_AngAcceptance]
+                   X-Use = 1                                     ; Use 1/0
+                 X-Value = 12                   mrad             ; acceptance
+                   Y-Use = 1                                     ; Use 1/0
+                 Y-Value = 9                    mrad             ; acceptance
+
+[D1_DipoleSettings]
+                    Brho = 10.91342             Tm               ; magnetic rigidity
+                   Angle = 30                   degrees          
+                  Radius = 11.25                m                
+
+
+{============================= BLOCK S1 - Drift ======================================}
+
+[S1_General]
+                    Name = S1_slits,1                            ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[S1_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 1,1                                   ; Use 1/0, Show 1/0
+                  X_size = 1,100.00,100.0,100.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[S1_optics]
+                    row1 = +1.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e-05
+                    row2 = +0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00
+                    row3 = +0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e-05
+                    row4 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[S1_AngAcceptance]
+                   X-Use = 0                                     ; Use 1/0
+                 X-Value = 1000                 mrad             ; acceptance
+                   Y-Use = 0                                     ; Use 1/0
+                 Y-Value = 1000                 mrad             ; acceptance
+
+[S1_DriftSettings]
+                    Mode = 0                                     ; Standard 1 / Beamline 0
+              ShowLength = 0                                     ; Brho 1 / Length 0
+
+
+{============================= BLOCK W1 - Wedge ======================================}
+
+[W1_General]
+                    Name = S1-degrader,1                         ; Name of Block, Constant name 1/0
+               Available = 0                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[W1_Compound]
+               contents1 = 0,13,1,26.982                         ; Nomer,Z,Atoms,Mass
+               thickness = 5,0,2.702,0,0                         ; State,Thickness,density,angle,SolidGas
+                  Defect = 1,0                                   ; [0] choice - % or micron at 0 degree,  [1]=value; 
+
+[W1_slits]
+                   Shape = 1                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,150.00,150.0,150.00,150.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,150.00,150.0,150.00,150.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[W1_WedgeSettings]
+             ProfileMode = 1                                     ; 0-Wedge,1-Homo,2-Curved
+    PhysProfileDesirable = 2                                     ; 0-Achrom,1-Monoch,2-user-defined
+                   Angle = 0.00000              mrad             ; slope of wedge
+         ProfileFileName = NULL
+               Direction = 0                                     ; x=0, y=1
+       CalculateForBlock = D2
+
+
+{============================= BLOCK M1 - Material ======================================}
+
+[M1_General]
+                    Name = MW11,1                                ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M1_Compound]
+               contents1 = 0,26,1,55.847                         ; Nomer,Z,Atoms,Mass
+               thickness = 1,275,7.866,0,0                       ; State,Thickness,density,angle,SolidGas
+                  Defect = 0,0.5                                 ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 0,1                                   ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.5,0.5,0.5          ns,mm,mm         ; Time&X&Y space
+
+[M1_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,80.00,80.0,80.00,80.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,80.00,80.0,80.00,80.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[M1_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+
+
+{============================= BLOCK D2 - Dipole ======================================}
+
+[D2_General]
+                    Name = D2,1                                  ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 18.176400            m                ; Length block for optical blocks
+             Before_Quad = 2                                     ; number of quadrupoles before optic device
+              After_Quad = 3                                     ; number of quadrupoles after  optic device
+             QA_DontDraw = 0
+                     ZmQ = 0                                     ;  Z - Q  = charge state settings
+        Calibration file = GSI\FRS_D2.cal
+
+[D2_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 1,1                                   ; Use 1/0, Show 1/0
+                  X_size = 1,100.00,100.0,100.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 1,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[D2_optics]
+                    row1 = -1.5567e+00,+1.6705e-02,+0.0000e+00,+0.0000e+00,+0.0000e+00,-3.4348e+01
+                    row2 = -6.9300e-03,-6.4229e-01,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.1933e+00
+                    row3 = +0.0000e+00,+0.0000e+00,-6.2730e-02,+5.6437e+00,+0.0000e+00,+0.0000e+00
+                    row4 = +0.0000e+00,+0.0000e+00,-1.4237e-01,-3.1321e+00,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[D2_AngAcceptance]
+                   X-Use = 1                                     ; Use 1/0
+                 X-Value = 16                   mrad             ; acceptance
+                   Y-Use = 1                                     ; Use 1/0
+                 Y-Value = 2.5                  mrad             ; acceptance
+
+[D2_DipoleSettings]
+                    Brho = 10.82374             Tm               ; magnetic rigidity
+                   Angle = -30                  degrees          
+                  Radius = 11.25                m                
+
+
+{============================= BLOCK M2 - Material ======================================}
+
+[M2_General]
+                    Name = MW21,1                                ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M2_Compound]
+               contents1 = 0,22,1,47.9                           ; Nomer,Z,Atoms,Mass
+               thickness = 1,129,4.519,0,0                       ; State,Thickness,density,angle,SolidGas
+                  Defect = 0,0.5                                 ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 0,1                                   ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.5,0.5,0.5          ns,mm,mm         ; Time&X&Y space
+
+[M2_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,80.00,80.0,80.00,80.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,80.00,80.0,80.00,80.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[M2_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+
+
+{============================= BLOCK S2 - Drift ======================================}
+
+[S2_General]
+                    Name = S2_slits,1                            ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[S2_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 1,1                                   ; Use 1/0, Show 1/0
+                  X_size = 1,100.00,100.0,100.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 1,1                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[S2_optics]
+                    row1 = +1.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e-05
+                    row2 = +0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00
+                    row3 = +0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e-05
+                    row4 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[S2_AngAcceptance]
+                   X-Use = 0                                     ; Use 1/0
+                 X-Value = 1000                 mrad             ; acceptance
+                   Y-Use = 0                                     ; Use 1/0
+                 Y-Value = 1000                 mrad             ; acceptance
+
+[S2_DriftSettings]
+                    Mode = 0                                     ; Standard 1 / Beamline 0
+              ShowLength = 0                                     ; Brho 1 / Length 0
+
+
+{============================= BLOCK M3 - Material ======================================}
+
+[M3_General]
+                    Name = Scint21,1                             ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M3_Compound]
+               contents1 = 0,1,11,1.008                          ; Nomer,Z,Atoms,Mass
+               contents2 = 1,6,10,12.011                         ; Nomer,Z,Atoms,Mass
+               thickness = 0,500,1.02,0,0                        ; State,Thickness,density,angle,SolidGas
+                  Defect = 1,5                                   ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 1,2                                   ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.1,1,1              ns,mm,mm         ; Time&X&Y space
+
+[M3_slits]
+                   Shape = 1                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,100.00,100.0,100.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[M3_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+
+
+{============================= BLOCK M4 - Material ======================================}
+
+[M4_General]
+                    Name = MW22,1                                ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M4_Compound]
+               contents1 = 0,22,1,47.9                           ; Nomer,Z,Atoms,Mass
+               thickness = 1,129,4.519,0,0                       ; State,Thickness,density,angle,SolidGas
+                  Defect = 0,0.5                                 ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 0,1                                   ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.5,0.5,0.5          ns,mm,mm         ; Time&X&Y space
+
+[M4_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,80.00,80.0,80.00,80.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,80.00,80.0,80.00,80.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[M4_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+
+
+{============================= BLOCK W2 - Wedge ======================================}
+
+[W2_General]
+                    Name = S2_wedge,1                            ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[W2_Compound]
+               contents1 = 0,13,1,26.982                         ; Nomer,Z,Atoms,Mass
+               thickness = 0,0,2.702,0,0                         ; State,Thickness,density,angle,SolidGas
+                  Defect = 1,0                                   ; [0] choice - % or micron at 0 degree,  [1]=value; 
+
+[W2_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,150.00,150.0,150.00,150.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,150.00,150.0,150.00,150.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[W2_WedgeSettings]
+             ProfileMode = 1                                     ; 0-Wedge,1-Homo,2-Curved
+    PhysProfileDesirable = 2                                     ; 0-Achrom,1-Monoch,2-user-defined
+                   Angle = 0.00000              mrad             ; slope of wedge
+         ProfileFileName = NULL
+               Direction = 0                                     ; x=0, y=1
+       CalculateForBlock = D4
+
+
+{============================= BLOCK D3 - Dipole ======================================}
+
+[D3_General]
+                    Name = D3,1                                  ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 49.412800            m                ; Length block for optical blocks
+             Before_Quad = 3                                     ; number of quadrupoles before optic device
+              After_Quad = 7                                     ; number of quadrupoles after  optic device
+             QA_DontDraw = 0
+                     ZmQ = 0                                     ;  Z - Q  = charge state settings
+        Calibration file = GSI\FRS_D3.cal
+
+[D3_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,100.00,100.0,100.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[D3_optics]
+                    row1 = -3.1457e+00,-1.0000e-05,+0.0000e+00,+0.0000e+00,+0.0000e+00,-1.5735e+02
+                    row2 = +1.8500e-02,-3.1790e-01,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.3158e+00
+                    row3 = +0.0000e+00,+0.0000e+00,+3.6076e+00,-1.8037e+00,+0.0000e+00,+0.0000e+00
+                    row4 = +0.0000e+00,+0.0000e+00,+1.9290e-01,+1.8080e-01,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[D3_AngAcceptance]
+                   X-Use = 1                                     ; Use 1/0
+                 X-Value = 12                   mrad             ; acceptance
+                   Y-Use = 1                                     ; Use 1/0
+                 Y-Value = 8.5                  mrad             ; acceptance
+
+[D3_DipoleSettings]
+                    Brho = 8.75632              Tm               ; magnetic rigidity
+                   Angle = -30                  degrees          
+                  Radius = 11.25                m                
+
+
+{============================= BLOCK M5 - Material ======================================}
+
+[M5_General]
+                    Name = MW71,1                                ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M5_Compound]
+               contents1 = 0,26,1,55.847                         ; Nomer,Z,Atoms,Mass
+               thickness = 1,236,7.866,0,0                       ; State,Thickness,density,angle,SolidGas
+                  Defect = 0,0.5                                 ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 0,1                                   ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.5,0.5,0.5          ns,mm,mm         ; Time&X&Y space
+
+[M5_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,80.00,80.0,80.00,80.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,80.00,80.0,80.00,80.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[M5_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+
+
+{============================= BLOCK S3 - Drift ======================================}
+
+[S3_General]
+                    Name = S7_slits,1                            ; Name of Block, Constant name 1/0
+               Available = 0                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[S3_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 1,1                                   ; Use 1/0, Show 1/0
+                  X_size = 1,100.00,100.0,100.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[S3_optics]
+                    row1 = +1.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e-05
+                    row2 = +0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00
+                    row3 = +0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e-05
+                    row4 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[S3_AngAcceptance]
+                   X-Use = 0                                     ; Use 1/0
+                 X-Value = 1000                 mrad             ; acceptance
+                   Y-Use = 0                                     ; Use 1/0
+                 Y-Value = 1000                 mrad             ; acceptance
+
+[S3_DriftSettings]
+                    Mode = 0                                     ; Standard 1 / Beamline 0
+              ShowLength = 0                                     ; Brho 1 / Length 0
+
+
+{============================= BLOCK D4 - Dipole ======================================}
+
+[D4_General]
+                    Name = D6,1                                  ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 31.991800            m                ; Length block for optical blocks
+             Before_Quad = 2                                     ; number of quadrupoles before optic device
+              After_Quad = 2                                     ; number of quadrupoles after  optic device
+             QA_DontDraw = 0
+                     ZmQ = 0                                     ;  Z - Q  = charge state settings
+        Calibration file = GSI\FRS_D6.cal
+
+[D4_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,100.00,100.0,100.00,100.0           ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[D4_optics]
+                    row1 = -5.8156e-01,+7.3000e-05,+0.0000e+00,+0.0000e+00,+0.0000e+00,+3.2469e+01
+                    row2 = -4.1400e-03,-1.7195e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+3.3770e-01
+                    row3 = +0.0000e+00,+0.0000e+00,+1.3897e-01,+2.0565e+01,+0.0000e+00,+0.0000e+00
+                    row4 = +0.0000e+00,+0.0000e+00,-4.7450e-02,+1.7330e-01,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[D4_AngAcceptance]
+                   X-Use = 1                                     ; Use 1/0
+                 X-Value = 3.5                  mrad             ; acceptance
+                   Y-Use = 1                                     ; Use 1/0
+                 Y-Value = 2.5                  mrad             ; acceptance
+
+[D4_DipoleSettings]
+                    Brho = 0.88661              Tm               ; magnetic rigidity
+                   Angle = 30                   degrees          
+                  Radius = 11.25                m                
+
+
+{============================= BLOCK M6 - Material ======================================}
+
+[M6_General]
+                    Name = MW81,1                                ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M6_Compound]
+               contents1 = 0,26,1,55.847                         ; Nomer,Z,Atoms,Mass
+               thickness = 1,236,7.866,0,0                       ; State,Thickness,density,angle,SolidGas
+                  Defect = 0,0.5                                 ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 0,1                                   ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.5,0.5,0.5          ns,mm,mm         ; Time&X&Y space
+
+[M6_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,80.00,80.0,80.00,80.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,80.00,80.0,80.00,80.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[M6_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+
+
+{============================= BLOCK S4 - Drift ======================================}
+
+[S4_General]
+                    Name = S8_slits,1                            ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[S4_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 1,1                                   ; Use 1/0, Show 1/0
+                  X_size = 1,60.00,60.0,60.00,60.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,100.00,100.0,100.00,100.0           ; joint,Bottom,B-limit,Top,T-limit
+
+[S4_optics]
+                    row1 = +1.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e-05
+                    row2 = +0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00
+                    row3 = +0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e-05
+                    row4 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[S4_AngAcceptance]
+                   X-Use = 0                                     ; Use 1/0
+                 X-Value = 1000                 mrad             ; acceptance
+                   Y-Use = 0                                     ; Use 1/0
+                 Y-Value = 1000                 mrad             ; acceptance
+
+[S4_DriftSettings]
+                    Mode = 0                                     ; Standard 1 / Beamline 0
+              ShowLength = 0                                     ; Brho 1 / Length 0
+
+
+{============================= BLOCK M7 - Material ======================================}
+
+[M7_General]
+                    Name = Scint81,1                             ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M7_Compound]
+               contents1 = 0,1,6,1.008                           ; Nomer,Z,Atoms,Mass
+               contents2 = 1,6,4,12.011                          ; Nomer,Z,Atoms,Mass
+               contents3 = 2,8,2,15.999                          ; Nomer,Z,Atoms,Mass
+               thickness = 0,500,1.17,0,0                        ; State,Thickness,density,angle,SolidGas
+                  Defect = 1,0.5                                 ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 1,0.22                                ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.11,0.31,0.32       ns,mm,mm         ; Time&X&Y space
+
+[M7_slits]
+                   Shape = 1                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,20.00,50.0,20.00,50.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,20.00,50.0,20.00,50.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[M7_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+
+
+{============================= BLOCK M8 - Material ======================================}
+
+[M8_General]
+                    Name = MW82,1                                ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M8_Compound]
+               contents1 = 0,26,22,55.847                        ; Nomer,Z,Atoms,Mass
+               thickness = 1,236,7.866,0,0                       ; State,Thickness,density,angle,SolidGas
+                  Defect = 1,0.408                               ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 0,0                                   ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
+
+[M8_slits]
+                   Shape = 1                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,20.00,50.0,20.00,50.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,20.00,50.0,20.00,50.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[M8_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+
+
+{============================= BLOCK D5 - Dipole ======================================}
+
+[D5_General]
+                    Name = beamline,1                            ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 58.062000            m                ; Length block for optical blocks
+             Before_Quad = 5                                     ; number of quadrupoles before optic device
+              After_Quad = 5                                     ; number of quadrupoles after  optic device
+             QA_DontDraw = 0
+                     ZmQ = 0                                     ;  Z - Q  = charge state settings
+        Calibration file = NULL
+
+[D5_slits]
+                   Shape = 0                                     ; 0-slits, 1-ellipse
+                X_action = 1,1                                   ; Use 1/0, Show 1/0
+                  X_size = 1,50.00,50.0,50.00,50.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 1,1                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,50.00,50.0,50.00,50.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[D5_optics]
+                    row1 = -2.8260e-01,+1.4130e-01,+0.0000e+00,+0.0000e+00,+0.0000e+00,-1.0000e-04
+                    row2 = -5.2660e-01,-3.2748e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,-1.0000e-04
+                    row3 = +0.0000e+00,+0.0000e+00,+1.1300e-01,-2.4604e+00,+0.0000e+00,+0.0000e+00
+                    row4 = +0.0000e+00,+0.0000e+00,+1.3840e-01,+5.8354e+00,+0.0000e+00,+0.0000e+00
+                    row5 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00,+0.0000e+00
+                    row6 = +0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+0.0000e+00,+1.0000e+00
+
+[D5_AngAcceptance]
+                   X-Use = 1                                     ; Use 1/0
+                 X-Value = 3.5                  mrad             ; acceptance
+                   Y-Use = 1                                     ; Use 1/0
+                 Y-Value = 0.65                 mrad             ; acceptance
+
+[D5_DipoleSettings]
+                    Brho = 2.00000              Tm               ; magnetic rigidity
+                   Angle = 0                    degrees          
+                  Radius = 3                    m                
+
+
+{============================= BLOCK M9 - Material ======================================}
+
+[M9_General]
+                    Name = target,1                              ; Name of Block, Constant name 1/0
+               Available = 1                                     ; Use 1/0
+                  Length = 0.000000             m                ; Length block for optical blocks
+
+[M9_Compound]
+               contents1 = 0,79,1,196.97                         ; Nomer,Z,Atoms,Mass
+               thickness = 1,100,19.31,0,0                       ; State,Thickness,density,angle,SolidGas
+                  Defect = 1,0.052                               ; [0] choice - % or micron at 0 degree,  [1]=value; 
+             ResolutionE = 1,0.2                                 ; [0] choice - % or MeV,  [1]=value; 
+             Resolution2 = 0.1,0.3,0.3          ns,mm,mm         ; Time&X&Y space
+
+[M9_slits]
+                   Shape = 1                                     ; 0-slits, 1-ellipse
+                X_action = 0,0                                   ; Use 1/0, Show 1/0
+                  X_size = 1,20.00,50.0,20.00,50.0               ; joint,Left,L-limit,Right,R-limit
+                Y_action = 0,0                                   ; Use 1/0, Show 1/0
+                  Y_size = 1,20.00,50.0,20.00,50.0               ; joint,Bottom,B-limit,Top,T-limit
+
+[M9_BlockCalibration]
+                     TOF = 1,1,0,ns                              ; Input PV(0) or CH(1), A, B, dimension
+                      dE = 1,1,0,MeV                             ; Input PV(0) or CH(1), A, B, dimension
+                       X = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+                       Y = 1,1,0,mm                              ; Input PV(0) or CH(1), A, B, dimension
+

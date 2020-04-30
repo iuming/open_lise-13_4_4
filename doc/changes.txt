@@ -1,0 +1,3486 @@
+	                Last Changes
+_________________________________________________________________
+13.4.4	01/24/20	
+
+* new drift block mode : "FINGER"
+- new class, new dialog with mask probability plot 
+- solutions for Distribution, D4, MonteCarlo
+
+* Correction in transmission for ZeroLength Blocks with slits
+__________________________________________________________________
+12.1.2	01/19/20	
+
+* modification in sqrt(sumsq) function to prevent overfloating double values
+* correction for the  e_A1900_2008.lpp path in the A1900 loading settings utility
+__________________________________________________________________
+12.1.0	12/19/19	
+
+* Version 12 became official
+__________________________________________________________________
+12.0.7	12/12/19	
+
+* Optical Matrix element in the Wedge block to reproduce global optical matrices
+with special wedge optics (Momentum Compression, momentum dispersion inversion)
+12.0.7	12/12/19	
+
+* Optical Matrix element in the Wedge block to reproduce global optical matrices
+with special wedge optics (Momentum Compression, momentum dispersion inversion)
+12.0.7	12/12/19	
+
+* Optical Matrix element in the Wedge block to reproduce global optical matrices
+with special wedge optics (Momentum Compression, momentum dispersion inversion)
+__________________________________________________________________
+12.0.6	12/06/19	
+
+* EPAX2 is default in LISE2019.lopt file
+* Tiny modifications in the AA&CS minimization dialog
+* Tiny modification for the nuclear compound list in the compound dialog
+* Reactions in Material : flush in P2array and D2array, loc_counter
+* Numbers of Calc tab and SR were increased regrding to reactions in wedge
+__________________________________________________________________
+12.0.1		11/19/19
+
+* version 12
+__________________________________________________________________
+11.2.122	10/21/19
+
+* Radiaton Residue Calculator: ODEINT method -> number of steps & message in the options dialog  
+* Update of FRIB 1.08a (1st year) yields
+__________________________________________________________________
+11.2.120	10/08/19
+
+* Pseudo MonteCarlo: correction for wedge thickness for large X and Y values
+__________________________________________________________________
+11.2.119	10/04/19
+
+* Gas-filled dipole dialog has been corrected
+* Checking Universal parameterization model #2 for old version (Marc's remark)
+* ARIS configuration has been implemented
+* Close the Wedge angle calculation window after calculation completion
+__________________________________________________________________
+11.2.115	09/19/19
+
+* FRIB and Argonne directories for files and configurations
+* NSCL extended files directory
+* New A1900_2019.lcnf, update 2019-options file, revision of A1900 package files
+* dBEsn modifications to product with Sn
+__________________________________________________________________
+11.2.111	09/16/19	
+
+* Periodic table of elements (bmp-file in the package)
+   - load from "Help" menu
+   - load from the Periodic table dialog ("Material" block)
+   - Material dialog: Periodic table update
+
+* Mass table revision
+   - Fixed : wrong indexation on global mass sheet in Database dialog
+   - New Default Mass Option (201)
+   - Show Transmission window update for user mass table
+
+* Correction in General properties of block for Quad number
+__________________________________________________________________
+11.1.103	09/11/19
+
+* Universal parameterization (UP) revision
+
+o UP dialog
+    - UP method #2 energy now from Abrasion Excitation Energy
+    - Update of UP plot (4 curves)
+    - UP modification for high energy
+    - UP modification for the "result_factor" value
+
+o Prefragment Search dialog
+    - new method "C" to search : W * CSgeom * factorial
+    - New option (abrasion) for excitaion energy to search a prefragment
+    - Modification of N/Z algorithm search ("A")
+    - prefragment search parameters: write/read to/from to user file
+    - prefragment search parameters: new default values
+    - modification of "B" searching method for prefragment
+
+o Error function modification
+    - Error function algorithm revision.
+    - Implementation of "erfc" array.
+      increasing argument range from 4.2 up to 20
+
+* New option file A1900_2019.lopt in LISE++ package
+* New "Stability+Coulomb" mass plot
+
+___________________________________________________________________
+11.0.92	08/29/19
+
+* Update of the table of nuclides for 2018-2019 isotopes
+* Using UNEDF1 as default for unknown isotopes search
+
+___________________________________________________________________
+11.0.87	07/18/19	
+
+* options of Fission fragment deformation at the scission point
+
+- option using constant values or fit results
+- using constant values
+
+* Closing the Gauge window after secondary reactions
+* Range optimizer -- quit by escape, dialog combox modifications
+* Run the fission properties dialog from the Physics Model menu 
+___________________________________________________________________
+11.0.81	06/12/19	
+
+* Kinematics Calculator -> Batch file -> Bug correction
+* Kinematics Calculator -> Batch file -> correction for Z,N final fragment
+___________________________________________________________________
+11.0.78	05/24/19	
+
+* Batch mode to calculate two fission fragments registration efficiency
+in the Kinematics Calculator 
+___________________________________________________________________
+11.0.72	05/06/19	
+
+* Checking and correction the links from the isotope transmission window 
+* The "BI" code -- documentation link from dialog, for correction for output paths
+* Pseudo MC plot : special external gauge (M.H.)
+* PID calibration.xls update  v.2.5
+___________________________________________________________________
+11.0.67	04/29/19	
+
+* PID calibration.xls. Access from LISE.exe
+* energy distributions corrections for primary beam without target in the case of charge-state-energy option
+* ETACHA initial parameter modifications
+___________________________________________________________________
+11.0.64	04/16/19
+
+* Kinematic Fission dialog
+ - Brho plot
+ - plotting conjugated particle
+ - gates on passing of both two fragments
+ - Brho acceptance instead Energy acceptance
+___________________________________________________________________
+11.0.61	04/14/19	
+
+* AA & UserCS minimisation
+ - Using thermolization in the AA & UserCS minimisation
+ - Thermalization Time coef format changed to value * 1e-22 * MeV*s
+ - using saved values at minimum target value if user breaks
+___________________________________________________________________
+11.0.57	04/05/19	
+
+*  BETA:  Important! Modification of transmission calculations for accumulated uncertainties
+important for thick non-achromatic materials in a separator
+
+* Global AA amplitude factor in the EE dialog
+* Variation of Global AA amplitude factor in AA & User CS minimisation
+
+* Update of "Optics optimization" (user break)
+___________________________________________________________________
+11.0.53	03/16/19	
+
+* Correction: Bug with dP/P-value in the MC dialog
+* Correction: Bug with read/write mass table options from/in LISE file 
+___________________________________________________________________
+11.0.50   03/14/19	 
+
+* the Range optimizer (Gas-Cell) utility : new plot of transmitted isotopes
+___________________________________________________________________
+11.0.48   03/12/19	 
+
+* AA minimization 
+- save minimum values at break
+- modifications of result filename  
+- correction for "GlobalFitMode" value to plot CS
+___________________________________________________________________
+11.0.45   03/10/19	 
+
+* User CS & AA minimization subroutine
+___________________________________________________________________
+11.0.40   03/02/19	 
+
+* The new button "Make items 1-3" in "E* vs sigma matrix calculation"  dialog
+* Initial Fissile Nuclei analysis : Np=3 correction
+___________________________________________________________________
+11.0.37   02/26/19	 
+
+* Initial Fissile Nuclei analysis 
+- call the analyzer from the main menu
+- color design of dialog
+- Coulomb fission checkbox
+- output format & median_sigma modifications
+
+* Modification in MC transmission: time & length in thew case of materials
+
+___________________________________________________________________
+11.0.32   02/20/19	 
+
+* Parent Fissile Nuclei analysis 
+- Batch mode
+- choice of value to show (mean, prob, median)
+- new mode: 3 excitation energy points 
+- using median and positive and negative variances
+- utility plots
+
+* 1D-plot statistics modification: median & variances 
+___________________________________________________________________
+
+11.0.25   02/04/19	 
+
+* LISE for Excel -> PID resolution calculator -> correction for d_gamma
+* Beam length documentation link from LISE++
+___________________________________________________________________
+11.0.23   01/28/18	 
+
+* Modification: Output result file summarized by reaction for A,Z,q + total transmission
+* Modification for the "Apply Limiting Temperature" procedure.
+* Parent Fissile Nuclei analysis --  start point
+___________________________________________________________________
+11.0.19   12/14/18	
+
+* New feature for All (Abrasion,Coulomb,Fusion)-Fission reactions: Velocity plot
+* Abrasion-Fission CS plots : option to plot all excitation energy region distributions together
+* Abrasion-Fission TKE plots : option to plot all excitation energy region distributions together
+___________________________________________________________________
+11.0.16	 12/11/18
+
+* Kinematics calculator -> 2D fragment MC plot : bug for CMS velocities has been fixed
+* PID resolution calcualtor update or Z(A/q) method
+___________________________________________________________________
+11.0.14   12/06/18   
+
+* Qgg vs CS plots : correction -- should work only in 1D case
+* Fixed Bug in Fission MC plot case
+* Color of sign for COSY blocks after Faraday
+* new RB-item in the MC fission plot dialog
+
+___________________________________________________________________
+11.0.12   	11/28/18
+
+* Correction in the installation package for LISE_Global.dll
+* Fonts were changed
+* the "Loading A1900 data" utility 
+- New Matrix plot
+- Quad plot update: Scratch and Save(Initial) field distributions
+- Creation of Quad scratch distributions from the Optic Envelope dialog
+
+* Abrasion-Ablation: Excitation energy
+- Limiting temperature distribution in the excitation energy plot
+- RMS(Exciation energy) distribution from Apf in the excitation energy plot
+- Exciation energy plots from Z
+- Apply Limiting Temperature for excitation energy
+
+___________________________________________________________________
+11.0.1		 11/05/18   
+
+* New LISE++ Global version
+
+___________________________________________________________________
+10.1.128	 10/31/18   
+
+* Font increase for the congifuration panel
+
+___________________________________________________________________
+10.1.127	 10/18/18   
+
+* selection of fissile nucleus rectangle for Abrasion-Fission
+* Determination of LISE AF EERs for high Z isotopes production 
+
+___________________________________________________________________
+10.1.126	 10/17/18   
+
+* Load A1900 settings 
+
+* Compound for two-body reaction
+* New dBEsn18 systematics
+* Corrections
+ - Quad field strengths plot
+ - Qgg - modification for  congugated neutrons
+ - Correction of Brho- and Wedge- plots for beam-upstream Faraday-cup
+ - Correction for Wedge properties calculation regarding to upstream Faraday-cup
+ - Correction for custom degraded properties calculation  
+ - Modification of the LISE++ local "string-sr" library
+ - Modification of Gas mixture writing to file
+ - Correction in the Matrix view utility for multipoles
+___________________________________________________________________
+10.1.111	 10/08/18   
+
+* MC output file -- correction for integer values (Z,N,q)
+* Gas mixture density option, reduced molar mass
+* Change of CmCallSecondaryCalculations()  location in TransAll
+* Option to show isomers in the table of nuclides in the Isotope decay analysis dialog
+___________________________________________________________________
+10.1.106	 08/15/18   
+
+* Corrections for Quad field values scaling in the case of COSY-linked blocks
+* Option to calculate separatively upstream and downstream blocks in the dipole and wien dialogs
+* Show COSY-symbol for COSY-map linked  blocks in the Setup window
+* Option to show isomers in the table of nuclides ("Isotope dialog")
+___________________________________________________________________
+10.1.102  07/19/18   
+
+* Kinematic Calculator (correction) -- Gamma & neutron as residues Case
+
+* RF-kicker 
+ - S & E properties
+ - selected block for optimization
+___________________________________________________________________
+10.1.99	 07/13/18 
+
+* Batch mode
+ - update for input list
+ - upper threshold on Brho1 in Optimum target plot
+ - SuperBatch mode
+
+
+* Isotopes -- search unknown 
+ - correction
+ - table was modified for UNEDF0
+
+* Optimum target plot : modifications for Second.reactions
+
+* FRACS in LISE_Excel
+___________________________________________________________________
+ 10.1.89	 05/04/18
+
+* correction in the FRIB mass converter
+* MC option : MC_dp => 0 : dP/P0  COSY;  1 : dPz/P0 transport
+
+___________________________________________________________________
+10.1.87	 04/27/18   
+
+* Monte Carlo Option : RadialSign =>  0 - no changes, 1 - Ang & Rad,  2 - as 1 + Theta and Phi
+___________________________________________________________________
+
+10.1.86	  04/26/18	
+
+* Use Pz (instead P0) for delta momentum. Important for large angles
+* modification to avoid expl overflow ("mexpl" and "mexp" functions)
+___________________________________________________________________
+10.1.84	 04/06/18	
+
+* New 5 LME mass tables: WS4, WS4_RBF, FRDM2012, HFB-22,27 
+* Isotopes observed in 2017-2018 are added in the LKISE++ table of nuclides
+___________________________________________________________________
+10.1.82   03/19/18   
+
+*The "Kicker" dialog update
+___________________________________________________________________
+10.1.81   03/17/18   
+
+* Update of "IsolCatcher" class and corresponding dialog
+* New class "MC_trans_base"
+* Update of GANIL coonfiguration files
+___________________________________________________________________
+10.1.77   02/09/18   
+
+* Warning in the case of charge state mode and no charge state production in target
+* Fusion
+- Excitation energy of compound (taking L into account)
+- in the Fusion dialog result window
+- Ldirect + k-value in the Fusion dialog result window
+- E_rotate_compound, P_CN modification
+
+* LISE++ internal : constants modification, Mnuc -> Mnucl, Mato-> Matom
+* APF Ex energy dialog ->  L from Apf  modification
+___________________________________________________________________
+10.1.71   01/04/18   
+
+* RMF mass tables
+* Discovery database update (MT)
+* "Separation energies minimum" plot
+___________________________________________________________________
+10.1.68   12/20/17   
+
+* Ploting FRIB masses -> LME revision
+* correction for 0-errors in the case extrapolation of lme-file data
+* All hydrogen ME data in the case of lme-fles are taken const data from LISE
+___________________________________________________________________
+
+10.1.65   12/19/17     Mass extrapolation
+
+* Global revison of mass extrapolation
+* Modification in ME-table reading file sourotines
+* Bug in the Setup dialog after the array operation
+* Correction in RF-kicker plot in the case of porotons
+
+___________________________________________________________________
+10.1.60   12/14/17   
+
+* Modification in Database values plotting
+___________________________________________________________________
+10.1.59   12/13/17   
+
+* AME2016 & NUBASE2016 in LISE++
+___________________________________________________________________
+10.1.58   11/15/17   
+
+* Array operations in the separator Set-up dialog
+* Materials : no more "slits" options
+
+* FRIB masses update
+* Permission to use possible negative values for "coef" in the convolution model
+* Fixed: Use Abrasion-Ablation results in CS plots
+* Target optimization options in the Brho scanning plot
+___________________________________________________________________
+10.1.52  10/12/17	
+
+* ID correction for the MSP144 utility
+* new e_MSP144_2017.* files
+___________________________________________________________________
+10.1.51  09/20/17	
+
+* bug in solenoid tuning :  BLOCK* ClassCalculateForBlock::GetBlock_CalculateForBlock()
+___________________________________________________________________
+
+10.1.50  09/11/17	middle version has been changed to avoid "update" message for minor version changes
+10.0.49  09/11/17	Option "Show AA calculations" corrections
+10.0.48  09/08/17	"FRIB drip-line search" modification due to beta-n new branchs
+10.0.47  09/01/17	Fusion cross section were not plotted cause of AvoidAA key. Corrected.
+
+___________________________________________________________________
+10.0.46  08/15/17	
+
+* external help for convolution model;
+* modifications in the in "reste" function
+* PACE4 about dialog
+___________________________________________________________________
+10.0.45  07/31/17	
+
+* Beam Rotation block 
+-- New block Rgom matrix to solve Rotation angle in Distr mode
+-- Rotate angle  --> modifications in transmision optics (ARIS issue)
+___________________________________________________________________
+10.0.43  07/25/17	
+
+* updates files in MyDocuments including iso-file.
+* IsoList Files for FRIB rate v.1.08 updates
+___________________________________________________________________
+10.0.41  07/18/17	
+
+* TableIsoFile & TableIsoListFile are local for each Plot
+* FRIB rates and beams for 1st and 2nd years
+* FusionInf modification for very thin target 
+___________________________________________________________________
+10.0.38  07/07/17	
+
+* MC_TransPlot::MakeAngleDistribution & L_taulise_angle: modification for tmax
+* Abration-Ablation : update for very thin target in the case of fusion
+* Modificatiopn of the Sigma_Parallel in the case of fusion Compound==recoil
+* substituiton Qd() -> max(Qd(),1) in Beam.cpp
+* Advanced user update for lise.ini
+___________________________________________________________________
+10.0.32  06/13/17	
+
+* "Discovery isotope" project update:
+ - links for Z=1-9
+ - rectangle for "non-existed" isotopes
+ - update of new isotope flags
+
+* Table of nuclides : updates for 2015-2016 discovered isotopes
+___________________________________________________________________
+10.0.31  06/09/17	
+
+* Optics Setup: connectined dotlines
+* Reading second order constraints from Transport file
+* A1900 segment 2016 configuration now with 3 quads 
+* Scheme size new restrictions
+* LISE++ Abrasion-Ablation option to plot
+
+___________________________________________________________________
+10.0.27  05/13/17  RF-kicker update
+
+* MC Rf-kicker angle shift due to dX-shift
+* Analytical Rf-kicker angle shift due to dX-shift
+
+10.0.24  05/11/17    
+* Excitation energy free coefficients are available
+* AME2016 ME-file in LISE++ package
+___________________________________________________________________
+
+10.0.25  05/13/17	FRACS parameterization
+* FRACS parameterizationis implemented
+* FRACS parameterization is used for Secondary reactions
+* User CS dilaog modification due to new FRACS parameterization
+* FRACS update v.1.1 due to the original bug (FIXED)
+
+___________________________________________________________________
+10.0.20  04/12/17    bug in MonteCarlo transmission in the case no optics blocks in file
+10.0.19  04/06/17    MC to file : utput format chas been changed from .5g to .6e
+10.0.18  04/04/17    Plot options --> add.info for default values
+10.0.17  04/04/17    Modification e_charge in Coulomb for BEam dialog
+___________________________________________________________________
+
+10.0.16  03/31/17    Radiation calculator modification for  Z > 100 
+10.0.15  03/30/17    Global.dll and Global.exe have been modified due to Helmut's request
+10.0.14  03/14/17    d_Mechanism.cpp has been splitted to d_Mechanism.cpp and o_MechanismReactions.cpp
+10.0.13  03/13/17    d_Database.cpp has been splitted to d_Database.cpp and o_Database_time.cpp
+10.0.12  03/10/17    MC "Radial" field name correction
+10.0.11  02/02/17    e_A1900 files update in LISE++ package
+
+___________________________________________________________________
+10.0.9   01/30/17    
+
+* LISE for Excel updated for PID value resolutions
+* New Actual Installer 6.6 version
+___________________________________________________________________
+
+10.0.8   01/20/17    
+
+* FRIB rates version 1.06 implemented in the code
+* FRIB logo has been updated
+___________________________________________________________________
+10.0.6a   12/19/16    
+
+* g/cm2 -> mg/cm2 in L_init.cpp  +  defect_thickness
+* new A1900 files, new e_BigRIPS files
+___________________________________________________________________
+10.0.6   11/22/16    
+
+* Moyal  factor increased from 1.15 to  1.5
+* Moyal in MC : correction Average to Probable
+*  asym distributions  
+- sigma increased to =4
+- Correction for asym distributions , GasCell case 
+
+___________________________________________________________________
+10.0.1   11/10/16    
+
+*  VERSION  10  
+
+___________________________________________________________________
+9.10.380 11/09/16    
+
+* crash in the case of Wedge after rotation block
+- p_Block_Optic : XX_global_coef choose between max abs o->xx or -> o->xy
+- taulise_optic: XX_glob_coef zero case for wedge calculations
+
+* MC : o_mc_trans: "cap" for zero velocity
+___________________________________________________________________
+9.10.377 11/07/16    
+
+* TwinSol utility : no more scratch configuration
+* Radiation Residue calculator : STEP 0  modification for low-yield (229Th case)
+
+___________________________________________________________________
+9.10.375 11/03/16    
+
+* "Transmission-Optics" : correction of accumulated undeterminty due to to wedge thickness defect
+* Actual Installer v.6.5
+* Radiation Residue calculator:
+-  Flag stiffness correction
+-  CmRB modification to stay FlagCalc 
+
+___________________________________________________________________
+9.10.371 10/28/16    
+
+* Radiation Residue calculator 
+- new options for 2D-plot and Isotope Conversation Law
+- New options min &  max T1/2  for unbound and stable isotopes in Radiation Residue calculator
+
+*  "GetHalfLifeForRadiationDecay"
+- special case for da_alpha, da_betam, da_betap
+- Procedure T1/2 and Decays from database to radiation have been changed : 221U case with T1/2/
+
+___________________________________________________________________
+9.10.363 10/21/16    
+
+* Radiation Calculator
+- Stiffness flags
+- Stiffness window colors
+- search for the bug
+_____________________________________________________________________
+9.10.361 10/14/16
+*  Solenoid block class : revision
+- Solenoid block dialog:  modification for block selection to get value
+- Solenoid block class : OPTICAL_MATRIX omReglage
+- TwinSol configuration and file in the LISE++ package
+
+* table2014.iso & table2016.iso
+___________________________________________________________________
+9.10.351 09/27/16    
+
+* Names and symbols for Z=113,115,117,118 have been updated
+___________________________________________________________________
+9.10.350 09/26/16    
+
+* Branching database :
+- The database has been filled out up to Z=118 based on NNDC
+- Branching values are shown in the transmission window
+___________________________________________________________________
+9.10.347 09/21/16 	
+
+* Kinematics calculator :
+- Correction for break-up with gamma
+- Correction for 2D two-body kinematics in CMS
+_____________________________________________________________________
+9.10.345 08/22/16    
+
+* Radiation residue calculator 
+- text output or results
+- optimization of calculations with unbound nuclei
+* branching ratio database done up to Z=50
+* new decay colors 
+* correction for RadioButtons-indexes in the MC file dialog
+_____________________________________________________________________
+9.10.342 08/09/16
+
+* New decay mode  : beta+ p-decay
+* decays and branches up to Z<=38  
+_____________________________________________________________________
+9.10.338 08/03/16
+
+* Decay branching ratio :
+
+* New decay mode  : beta- neutron decay
+* Decay branching ratio file \bin\branching_ratio.lbase
+* Decay branching ratio dialog
+   - Call the Branching Ratio dialog from Show Transmission window and 
+     the Isotope options dialog
+   - Branching Ratio Dialog : Z-wallet
+* Branching Ratio is used in Radiation Residue calculations
+_____________________________________________________________________
+9.10.332 08/01/16	
+
+* Radiation residue calculator v.2.
+
+_____________________________________________________________________
+9.10.321 07/15/16	
+
+* Radiation residue calculator
+
+_____________________________________________________________________
+9.10.312 06/28/16	
+
+* "o_mass.cpp" modification for "decay_analysis"
+* PACE4 new version   4.21 (serious bug for Ad() function)
+_____________________________________________________________________
+9.10.307 06/10/16	
+
+* ETACHA5 GUI is implemented in the LISE++ package
+* template for GEMINI++ GUI in LISE++
+_____________________________________________________________________
+9.10.305 06/09/16	
+
+* search a block with slits closest to wedge
+* modification of boundary condition for Envelope plot
+* permit editing of optical matrix d/d element
+_____________________________________________________________________
+9.10.302 06/07/16	
+
+* Import a transport file:
+- checking for command 2.0 before and after dipole
+- fitting constraints
+
+* Splitting Use Dipole Fringe Field on Entrance and Exit options
+* Dipole transport dialog and LISE file structure modification
+_____________________________________________________________________
+9.10.298 06/06/16
+
+* correction for Matrix Units in the Electric Dipole dialog
+* Ideal Magnet dialog: modification for Electric Dipole torroidal case
+_____________________________________________________________________
+9.10.296 06/02/16
+
+* SECOND ORDER solution for Electrostatic Dipole 
+* EMMA_2016 and SHELS_2016_o2 files
+* max.possible angle in MC calculations
+* Electrostatic Dipole  -- using half of Erho deviation and  
+  M-matrices in MC calculations
+* Work under the case then Corresponding Brho & Erho equal to 0
+
+_____________________________________________________________________
+9.10.286 05/24/16	
+
+* Update of FRIB masses (SV-MIN.lme & SKMS.lme)
+* modification in the "Global" code 
+* ODE and RKF45 files implementation
+* HRS (FRIB) example in LISE++
+* o_Ionization modification to check Z threshold
+______________________________________________________________________
+9.10.280 04/04/16	
+
+* Correction in the Kinematics Calculator: 
+the string for reading energies of neutron and gamma has been uncommented...
+______________________________________________________________________
+9.10.279 03/31/16	
+
+* Q-optimal value and Total Excitation energy (based on the Q-optimal)
+ in the Two-body mode of the Kinematics Calculator
+______________________________________________________________________
+9.10.278 03/29/16	
+
+* Update: Assistant to convert Fortran to C (v.2)
+______________________________________________________________________
+9.10.277 03/21/16	
+
+* Reverse configuration documentation
+* LISE.xlsm update
+______________________________________________________________________
+9.10.275 02/25/16	
+
+* modification of "MC Plot to file" with new function "sprintf_at_end"
+* new function "sprintf_at_end"
+* Zero.lme in the package
+* Link correction for Sweden TOI
+* more digits in Global Calc SUM in the status bar
+______________________________________________________________________
+9.10.270 02/03/16	
+
+* FRIB mass tables in the LISE++ package
+* converter of FRIB mass tables to LISE lme files
+______________________________________________________________________
+9.10.266 02/01/16	
+
+* New 2016 Dubna configurations
+* NEW IDs for Reverse configuration commands
+* Correction for Show Tranmsission window:
+- message for AF region transmission
+- case AF fission is only one EER region passed
+______________________________________________________________________
+9.10.262 01/11/16	
+
+* Overall transmission modification for missing EER in the Abrasion-Fission case
+______________________________________________________________________
+9.10.260 01/09/16	
+
+* Help from Fit constraint block
+* Redrawing Acceleration in Block edit mode (Setup & Optics)
+* Import of Transport files: correction for Dipole -- E-method and remote option
+_______________________________________________________________________
+9.10.257 01/07/16	
+
+* Plotting GEMINI Cross Section calculation results 
+_______________________________________________________________________
+9.10.256 01/06/16	
+
+* NEW ID Rutherford command modification
+_______________________________________________________________________
+9.10.255 01/05/16	
+
+* Optics Optimizer 
+- correction for deduced beam vector values
+- modification for beam sigma edit
+_______________________________________________________________________
+9.10.253 01/04/16	
+
+* Range optimizer modification for charge state case
+_______________________________________________________________________
+9.10.252 12/30/15	
+
+* ID Rutherford command modification. before was overlapping with checkscheme
+* Attempt to clear contour statistics      : class Contour
+_______________________________________________________________________
+9.10.250 12/21/15	
+
+* correction MC for reaction place :  new function MakeProbabilityDistribution2
+versions 9.10.237-249 contain this bug
+
+_______________________________________________________________________
+9.10.249 12/16/15	
+
+* Velocity parameters in LISE output rays file
+* Correction for search of the end of input rays file
+_______________________________________________________________________
+9.10.245 12/09/15	
+
+* Fixed : Spikes in energy distributions after passing thick materials 
+ - issue was with dP in L_distr->SumGaussian
+_______________________________________________________________________
+9.10.244 12/09/15	
+
+* Fixed: bug in taulise_wedge for energy calculation after wedge 
+(was just commented in 9.10.243 for debug purposes)
+
+_______________________________________________________________________
+9.10.243 	12/09/15
+
+* revision of using dP accumulation. 
+  Important for spatial	distributions after passing wedges
+_______________________________________________________________________
+9.10.238	12/08/15	
+
+* option of Rutherford scattering of primary beam in target in MC mode
+using the new class "RuthYield" 
+_______________________________________________________________________
+9.10.237	12/07/15	
+
+* New class "distribution2P" 
+- package creation for probability distribution2 to get random values
+- updating for this new class all previous probability fragments of text
+_______________________________________________________________________
+9.10.229	12/04/15	
+
+* new class "RuthYield"
+- new utility "Angular Straggling & Rutherford scattering probabilities in compound"
+in Menu->Utilities->Reaction Utilities
+_______________________________________________________________________
+9.10.219	12/02/15	
+
+* Kinematics calculator
+
+- Grazing angles in Lab and CM in Kinematics plots
+- Rutherford plot : impact parameter plot as function of Theta
+- Rutherford plot : closest approach as function of impact parameter
+_______________________________________________________________________
+9.10.215	12/01/15	
+
+* X-log option for Range,dE/dX,ang.straggling plots
+* Minimum energy for angular straggling changed
+* Monte carlo transmission was modified for slicing thick materials
+_______________________________________________________________________
+9.10.209	11/19/15
+
+* Optics Optimization dialog
+
+- Plot of Optimization Beam Simgas 
+- Button "Edit Optimization Beam Simga vector"
+_______________________________________________________________________
+9.10.207	11/17/15
+
+* EMMA (TRIUMF) configuration
+* Angular acceptance recalculation (rectangle and ellipse cases)
+_______________________________________________________________________
+9.10.205	11/13/15
+
+* Reversed configuration construction in LISE++
+_______________________________________________________________________
+9.10.191	11/06/15	
+
+* Correction for E-Quad optimization
+_______________________________________________________________________
+9.10.190	10/28/15	
+
+* Using Inverse angles in envelope plots with negative drifts
+* Exponential format in optical matrices
+* Close action for an inrays file after leaving the corresponding dialog
+_______________________________________________________________________
+9.10.187	10/22/15	
+
+* do not write non-useful (up triangle) Secondary Matrix elements in file
+* exponential format in optical matrices
+_______________________________________________________________________
+9.10.186	09/29/15	
+
+* Modifications of 3 EE Regions search settings  
+_______________________________________________________________________
+9.10.185	09/25/15
+
+* MC options : Radial and Angular values sign
+* Label correction for 2D-plots in the case of other reaction and charger states
+________________________________________________________________________
+9.10.183	09/21/15
+
+* Q correction for Mass calculations in Monte Carlo mode	
+* Acculinna (Dubna):  27s file and calibrations
+________________________________________________________________________
+9.10.181	09/16/15	
+
+* DRAGON & SECAR reaction files with two-body reaction mechanism
+* Two-body reaction : HI & gamma case
+* Two-body reaction : modifications for charge state
+* Angular transmission : corrections for gates
+________________________________________________________________________
+9.10.177	09/11/15	
+
+* FMA (Argonne) files and configurations in LISE++
+* S3 (GANIL) files and configurations in LISE++
+_______________________________________________________________________
+9.10.174	09/10/15	
+
+* Improvement of Dif.CS file utility
+________________________________________________________________________
+9.10.171	08/27/15	
+
+* Update of SECAR configurations for the new Wien's feature
+* Keeping Dispersion constant in Wien filter
+________________________________________________________________________
+9.10.169	08/20/15	
+
+* SECAR configurations
+* Wien-filter and COSY-link. Calculation of the dispersion coefficient
+________________________________________________________________________
+9.10.167	08/17/15	
+
+* Shima charge state distribution width correction in LISE++.exe and LISE for Excel
+* Optics fit : struggling with exponent overflow
+* Wien filter :  bending direction
+________________________________________________________________________
+9.10.163	08/10/15	
+
+* MC output to file
+- number of Output Ray fileds increased up to 15
+- new modes to save in LISE++ compatible input format 
+- mm & cm option
+- new file filtres for MC input and output rays
+
+* T1/2 in result files
+________________________________________________________________________
+9.10.156	07/27/15	
+
+* New user Beam vector "OptBeam" designed for Optics Optimization 
+
+
+* Second order optics optimization
+
+-  Block "Fit" : modification for Second order constraint
+- "Block "Fit" dialog : Show Abberation & 2nd order matrix lists
+-  Using Sextupole fileds in the Optimization procedure 
+
+________________________________________________________________________
+9.10.142	07/22/15	
+
+* DRAGON @ TRIUMF files and configurations
+________________________________________________________________________
+9.10.141	07/19/15	
+
+* Correction for Angular transmission "PreviousOpticBlock  -> PreviousAllOpticBlock"
+--  may affect on angular acceptances cut
+________________________________________________________________________
+9.10.140	07/17/15	
+
+* SetupQ modifications to show a ED voltage value correctly
+* eMultipole "block" for BlockPlotPosition in the Envelope plot
+________________________________________________________________________
+9.10.138	07/15/15	
+
+* Do not calculate GOM after Faraday Cup : important for Quad values
+* BlockPlotPosition modification for multipoles
+* Block Distribution plots after blocks : corrections in menu to avoid fitting blocks
+________________________________________________________________________
+9.10.133	07/13/15	
+
+* Kinematic calculator: Modifications with Energy and Intensity edit cells, More digits for energy outputs 
+* "Electron binding energy in ion mass calculations" checkbox in the Production mechanism
+________________________________________________________________________
+9.10.131	07/10/15	
+
+* Ion Mass Calculator
+* Ion Mass correction for binding electron energies
+* Ionization Energy database
+________________________________________________________________________
+9.10.128	06/29/15	
+
+* Show Initial Minimization Conditions in the Optics Fit dialog
+* Modification of the Special limit function for minimization: const step 0.001
+________________________________________________________________________
+9.10.126	06/26/15	
+
+* lmbc_core.c   modification due to crash
+* new labeling of the beam-sigma vector values
+* New value "Beam vector - R" = sqrt(x^2+y^2) in the Fit constraint
+________________________________________________________________________
+9.10.123	06/24/15	
+
+* Important Corrections in E-quad and M-multipole dialogs
+________________________________________________________________________
+9.10.119	06/23/15	
+
+* Minimization output modification
+________________________________________________________________________
+9.10.118	06/19/15	
+
+* User Break in the Minimization process
+* the Kickier dialog modification
+* Correction in Output file format for MC plots
+* ID modifications for CS-Qgg & CS&dBE plots
+* Monte Carlo : modifications for Eloss and Range with Faraday cup
+________________________________________________________________________
+9.10.113	06/18/15	
+
+* New Super-FRS configurations
+* Kantele - Gamspeed modifications
+* "Options" dialog large revision 
+
+*** Fitting ****
+- SetFocus back in the Fast Edit Optics dialog
+- Global reconstruction of Fit dialog in order to accept changes from the "Fast Edit Optics" dialog
+- Change Fitting option "Active" in the Fast Editing optics dialog
+- New Option: show "Fit" blocks in Scheme and Setup windows
+- MC apparatus without fit-constraints blocks
+- New functions BLOCKnext and BLOCKprevious with "noFit" options
+- Do not show fit constraints in the menus
+- Do not show no"Active" fit constraints in Scheme and Setup Window
+- Option "Active" in Fit Constraints
+- Corrections for Separator scheme in the case of Fitting block
+________________________________________________________________________
+9.10.100     05/22/15	
+
+* Lower and Upper limit constraints in optics minimization
+
+________________________________________________________________________
+9.10.97	     05/21/15
+
+* MC Transmission calculations for isotopes in the list
+* Modifications in ShowBlock for Drift and Fit blocks
+________________________________________________________________________
+9.10.94	     05/06/15	
+
+* Optics Minimization in LISE++
+________________________________________________________________________
+9.10.62	     04/15/15	
+
+* Moller95 masses
+* Labels "L_direct@CpCt"
+*"aem" -> "amu"
+________________________________________________________________________
+9.10.59	     04/06/15	
+
+* Range Gas Cell -- modifications of energy loss distribution for passing material and stopping
+* "Dummy" blocks modifications for the Scheme
+* Physical Calculator modifications for Range and degrader values
+* Range table up to 50 GeV
+* Nubmebr of blocks increased up to 500
+
+- bug correction in the WShow subtoutine
+- ShowCalc -- modification for charge state numbers (-3d)
+- Fusion reaction names correction
+- Plot1 legend size
+- new MaxZtargetHubert=92, NumberTabELOSS = 100
+
+________________________________________________________________________
+9.10.49     03/23/15	
+
+* Fusion dialog: important change for QE-channel
+
+________________________________________________________________________
+9.10.48     03/20/15	
+
+* Fission barrier
+-- vanishing factor for data from FILE based on Sierk or Cohen models
+-- If Sierk barrier <0 (Z>110 or other conditions) then use Cohen
+-- New Fission barriers from P.Moller et al., PRC91(2015)024310
+
+* Fusion dialog 
+-- correction for DIC
+-- Partial cross sections revision
+-- Elastic Scatttering partial cross sections
+-- Fission barrier settings warning for high Z and Sierk or Cohen models
+
+________________________________________________________________________
+9.10.39   03/16/15
+
+* The Fusion dialog:
+-- revision of partial cross sections
+-- E_critical and Channels calculation flag in the fusion dialog
+________________________________________________________________________
+9.10.37   03/16/15
+
+* Modification in "FindSimpleWedgeAnlge" subroutine for zero-dispersion of 2nd half
+________________________________________________________________________
+9.10.36   03/13/15	
+
+* Upgrade The Show Values window in the Fusion dialog
+* Correction for overall transmission in the ShowCalc window
+* Initial distribution for channels in the Fusion dialog
+* De-excitation channels of compound plot
+* Momentum L is new parameter for S_Element and Abrasion-Ablation
+* Main menu modifications
+* New class "TListShowWindow"
+ - TShowMCtrans  based on TListShowWindow
+ - W_showCalc  based on TListShowWindow
+________________________________________________________________________
+9.10.27   03/03/15
+
+
+* Fusion mechanism dialog global revision
+- Plots V=f(R) & V=f(R,L)
+- Bass, T, P_CN B=f(L), R_B=f(L) plots
+- Partial Cross Sections plots
+- L_direct, direct reaction CS
+- L_max by LISE++ from V
+- help links, button Show Details and CS
+
+* Main menu modifications; New item "Mechanism"
+
+* Fission barrier plot as function of  L, Yrast line
+
+* Different
+- Atomic number of target in the ShowSetup
+- Angular Momentum in the APF excitation plots
+- Gadget and menu orders have been changed
+- Plotting method : V-Histogramm
+- 1D-plot : user line thickness
+- reaction characteristics from Energy : corrections
+
+________________________________________________________________________
+9.10.4 	01/30/15	
+
+* "custom shape degrader" dialog: option to skip energy/position calculations in polynom mode
+
+________________________________________________________________________
+9.9.3 	01/21/15
+
+* New Actual Installor version. updated Discovery-Lav iso-file
+* Corrections in dialogs for DBE and Qg plots
+________________________________________________________________________
+9.9.1 	12/29/14	
+
+*New official version 9.9
+
+________________________________________________________________________
+9.8.178 12/29/14	
+
+* A1900 2015 configuration and option files
+* Modification of MARS and eBigRIPS configurations
+________________________________________________________________________
+9.8.176 12/24/14
+
+* Extended MSP-144 (Dubna) configuration
+________________________________________________________________________
+9.8.175 12/13/14	
+
+* Abrasion-Fission : velocity of fissile nuclei  
+ -- distribution method
+ -- MC method
+
+* Update of MARS configurations & files
+* BigRIPS high order configurations
+* Links on available beams in Europe and RIKEN
+
+* PhysCalculator -- do not clean statistics at exit
+* Modification for EPAX2.15 (option 3) , increase the coef for light nuclei starting Be (Z=4)
+
+________________________________________________________________________
+9.8.167 11/26/14     
+
+* Update of E-dipole information in the Optic dialog
+* Update of SHELS (Dubna) configuration and calibration files
+________________________________________________________________________
+9.8.165 11/19/14
+
+* Modifications important for fission and two-body reactions at low energies
+-  Modifications of Angular Acceptance passing  for fission products
+-  Fission Matrix Kinematics modification - filling by a min energy value rest of matrices
+________________________________________________________________________
+9.8.162 11/18/14     
+
+* Correction for Drift eff.length at file opening that caused crash
+* SHELS (Dubna) configuration and calibration files
+* PRISMA (Legnaro) separator
+* Address Correction for NSCL beam list
+________________________________________________________________________
+9.8.158 11/13/14
+
+* Help link from the Quad effective length dialog
+* Modification for SE-methods in the Electr.Dipole dialog
+* Minimum energy threshold for angular straggling calculations in Analytical transmission mode
+________________________________________________________________________
+9.8.156 11/12/14
+
+* Modification of Show Transmission Window
+* Correction for Block Lengths in BLOCK_D class
+* Help link for ES_methods
+________________________________________________________________________
+9.8.153 11/10/14
+
+* D6 (compensating dipole) -- remote control
+* ED block -- modification for SE_method
+* Wien block:
+-- modification for SE_method -- correction for zero Brho value
+-- matrix calculation inside of class
+________________________________________________________________________
+9.8.147 11/06/14
+
+* Modification of Brho dialog, Block option dialogs for ES_method
+* Modifications of Separator Setup & Quad Setup for  _E_Block lengths
+* New property of optical block : section / element
+* New virtual function "bool CalculteOM(bool) in BLOCK_Optics
+* I(A) current in the Multipole dialog (if the calibration file exists)
+________________________________________________________________________
+9.8.138 11/03/14
+
+* A1900 configuration with Beam Dump after the 1st dipole
+* New Beam Line (Drift block mode) property :  quads for scheme
+________________________________________________________________________
+9.8.136 11/02/14
+
+* Modification for last optical block for transmission calculations in the case of Faraday cup
+________________________________________________________________________
+9.8.135 10/31/14
+
+* Manual recalculation of e-blocks
+* New property of optical block : Permission for Remote recalculation
+* Test for correct effective length settings
+________________________________________________________________________
+9.8.128 10/28/14
+
+* Plots for CS vs Systematics
+* Logarithm scale for horizontal axis (1D-case)
+* New checkbox for Methods to draw : Grids, Slits
+________________________________________________________________________
+9.8.123 10/21/14
+
+* New dBE & dBEsn plots in the new submenu "Systematics distribution" in "1D-plots" menu
+________________________________________________________________________
+9.8.120 10/20/14
+
+* Effective multipole length
+________________________________________________________________________
+9.8.117 10/15/14
+
+* PhysCalculator --  ion mass field, all calcualtions uses ion mass
+* Global changes of the code to use new ion masses
+* New functions : ion mass (taking into account lost electrons)
+________________________________________________________________________
+9.8.114 09/02/14
+
+* AbrasionAblation Width decay -- correction for 26O case
+* "Stabilty" separation energy plot
+* Experiemntal Setup panel : modification to calculate Fusion compound if Fuison reaction is set by background
+* Fission kinematics - matrix -- dE(energy loss) conversion
+________________________________________________________________________
+9.8.110 08/13/14
+
+* Update for passing stripper in Fission kinematics. Important for low energy and thick stripper
+* Fission barrier : correction to use  calcualtion in the case of Muller's file
+* Modifications: Drawing MC rate (total value)
+* Fixed: Loading file in the optical matrix dialog
+* Modifications: Random generator -> change factor to initialize
+________________________________________________________________________
+
+9.8.105 08/01/14
+
+* the "FRIB isotopes" utility under development
+* internal reinitialization of the generator of random nymbers
+* new bounds in MC plot if no event in initializatio process
+________________________________________________________________________
+9.8.102 07/29/14
+
+correction: MC list file -- only one set reaction was passing -- fixed
+________________________________________________________________________
+9.8.101 07/22/14
+
+* correction of bug in MC plots due to file_write
+* correction for font size in MC_plot=20 (Ellipse MC)
+________________________________________________________________________
+9.8.100 07/22/14
+
+* Options "write all rays" and "write only passed rays" in the MC file utility
+* Beam integral in MC plots
+* Precise calculation of mean energy after material for
+    qualitative estimation of reactions in material
+* Revision of Reaction Characteristics at small energies
+* the beam scattering option has been closed
+________________________________________________________________________
+9.8.093 07/16/14
+
+* New colors and labels for Multipoles
+________________________________________________________________________
+9.8.092 07/10/14
+
+* Transport file import to LISE++ update for tuning dipole
+________________________________________________________________________
+9.8.091 07/08/14
+
+* Optical block edit dialog icon in the toolbar
+* Angular acceptance option in the MC dialog
+________________________________________________________________________
+9.8.089 07/07/14
+
+* "Transport" code file import to LISE++
+________________________________________________________________________
+9.8.086 06/18/14
+
+* LISE3 separator extended version and recommendations for extended configurations
+* Plot Statistics window modification
+* Modification of the Transmission analysis dialog from ShowTransWindow due to crash
+________________________________________________________________________
+9.8.083 06/10/14
+
+* Modifications in Total isotope transmission plot
+* NCalc number has been increased up to 40 000
+________________________________________________________________________
+9.8.081 05/30/14
+
+*  ISOL rates plot from "Utilities" menu
+*  Corrections in Global weighted isotope transmission plot
+________________________________________________________________________
+9.8.078 05/22/14
+
+* Fission  Kinematics revision in taulise-subroutins
+* Important update for Fusion-Fission  Kinematics
+
+* Update of GSI configurations
+________________________________________________________________________
+9.8.075 05/15/14
+
+*Correction for 2d MC plot in the case of one selected isotope
+
+________________________________________________________________________
+9.8.074 05/06/14
+
+* Target-Wedge optimization:
+- save and restore wedge angles
+- column "Total" in result file, plot "Total"
+- Option for Wedge angle
+
+* "Find Simple Wedge solution" correction in the case intermediate optical blocks
+* No check for secondary reactions to see transmission if file was just opened
+* "Block Wedge" Dialog : changes for Dispersion of Previous Optical block
+
+________________________________________________________________________
+9.8.067 04/16/14	
+
+* Restriction for factorial argument in fireball subroutine  and
+  (k<60) condition for ExcitationEnergy_Exponent
+
+* LISE.xls statistical functions modifications
+
+* Estimation of error of mean value
+- Plot & Save : Estimation of error of mean value
+- X-error on plot
+- Revision of Errors of mean and sigma including dX-error
+
+________________________________________________________________________
+9.8.060 04/03/14	
+
+* Warning message if "Number of charge states in file less the number" (MC Isotope List)
+- Modification in MC calculation for charge states
+- Check for materials to change charge states between disperse blocks (MC mode)
+
+* entrance for ISOL plot and documentation
+________________________________________________________________________
+9.8.056 03/27/14	
+
+* TAMU Solenoid configuration file with kept MC settings
+* Monte carlo settings : Read/Write  from/to LISE++ file
+
+* Option to show Quadrupole or Sextupole Field value in the Setup window
+
+* Correction in LISE++ File Read/Write subroutines
+* Correction in MC Gate dialog for the RF Cyclotron CheckBox
+* "File Open", "Cfg Load", File Append" commands are DISABLE in MC mode
+* Modification in Cross Section calculations call @ MC mode
+
+________________________________________________________________________
+9.8.048 03/24/14
+
+* MARS, RIBF, FRS schemes
+* TAMU logo
+* New MARS configuration and example files
+* Modification of Compensating dipole dialog (open/save file)
+________________________________________________________________________
+9.8.044 03/18/14
+
+* Compensating dipole : minimization
+* New links for NSCL and FRIB rates
+* Compensating dipole : platform inclination angle sign equal to Dipole angle sign
+
+________________________________________________________________________
+9.8.041  03/15/14
+
+* MARS extended configuration with Quad and Dipole calibration files
+* Quad calibration (B[I]) development
+
+________________________________________________________________________
+9.8.037 03/10/14
+
+* Modification due to Compensating dipole revision
+* New GSI configuration and example files
+* Kinematics calculator : two-body vs. gamma
+* Optical blocks colors in set-up window
+________________________________________________________________________
+9.8.32 02/18/14
+
+* Protected mode for selection of channels in the Evaporation option dialog
+* Solving 2n-decay issue with only 1n channel option (case of 26 Oxygen)
+
+________________________________________________________________________
+9.8.30 02/13/14
+
+* save/restore information of calculated ion transmission the case of temporary profile insertion
+in order to get information for primary beam and setting fragment charge state distributions
+(menu "1D-plot" and corresponing icon in the toolbar)
+
+* Option Exclude p-unbound nuclei < 1e-9s from calculations of residual cross sections
+* Font size "+" & "-" buttons in the Plot toolbar
+
+________________________________________________________________________
+9.8.26 02/03/14
+
+* Update the table of nuclides for new isotopes from 2012-2013: new  table2014.iso
+* New excitation energy model #3 (Excitation energy-exponential)
+* Cleaning the excitation energy model #2 from unused parameters
+________________________________________________________________________
+9.8.23 01/25/14
+
+* Range optimizer : backward calculations to estimate a thickness of degrader
+________________________________________________________________________
+9.8.22 01/24/14
+
+* LISE optics : FINAL solution for  Quad and Sext together
+
+* Ideal magnet dialog:
+- solution for Quad and Sext together
+- Sextupole through Global equations
+- k2s in sextupole mode
+________________________________________________________________________
+9.8.18 01/21/14
+
+* New default values for Gas Cell utility, Plotting method has been changed
+* Modification in 2D MC plot output : from GANIL integer format to double
+* Option "Use Fringe Filed for Dipole" in the Dipole optics dialog
+* Correction for automatic sext-B recalculation
+________________________________________________________________________
+9.8.14 01/15/14
+
+* Plot Statistics file and Contour frame: more digits in output format
+
+* Edit Optics Dialog : order of optical matrices are shown for each block
+
+--- Multipole and dipole dialogs
+* forbidden to calculate matrices if they are linked to COSY files
+* Check for matrix calculation at exit if dialog cells value were changed
+________________________________________________________________________
+9.8.10 01/12/14
+
+* Block Drift new feature "MULTIPOLE" - superposition Quad and Sext fields
+
+* "Selection" issue has been solved in the Set-up dialog
+* "Selection" issue has been solved in the Optics-Edit dialog
+________________________________________________________________________
+9.8.7 01/09/14
+
+Range optimizer
+
+* 2D optimization : wedge angle & adjustable degrader
+* Update for Save and Restore Brho-values and Wedge properties
+* New option : recalculate optics between materials during optimizations
+
+________________________________________________________________________
+9.8.4	01/08/17
+
+* Modification of EPAX 3.1 for secondary reactions
+* Corrections in the Kinematics calculator dialog for the case A_lab=0
+
+________________________________________________________________________
+9.8.2	11/18/13
+
+* moved to version 9.8
+
+________________________________________________________________________
+9.7.1	11/05/13
+
+* correction in the Shift block for the case of angular shift and fission
+________________________________________________________________________
+
+9.7 	11/01/13
+
+* New official version 9.7
+
+________________________________________________________________________
+9.6.139 10/17/13
+
+* MARS spectrometer extended configuration in LISE++ package
+
+* Plotting Envelopes with rotation blocks:
+ - Absolute and local XY-orientation for MC envelopes
+ - Absolute and local XY-orientation for Distribution envelopes
+ - Modification :  Drawing Block aperture size in MC plots
+ - Absolute rotation angle is property of each block  and being modified @  void CalcBlock::SetFlags()
+
+________________________________________________________________________
+9.6.134 10/15/13     "Accept matrix" button in the Wien Optic dialog
+________________________________________________________________________
+9.6.133 10/09/13     Kinematics plot : modifications in axis titles
+________________________________________________________________________
+9.6.132 10/08/13
+
+* neutron and gamma induced reactions in the Kinematic Calculator
+
+* Corrections in transmission subroutines :
+a. modification for large angular straggling  @ very low energies  : fixed
+b. in the case of materials only previous disperse block was used instead any optical block : fixed
+
+________________________________________________________________________
+9.6.126 10/03/13
+
+*  IMPORTANT!!!!   Correction in calculation for transmission through materials
+   (so called "unstopped in material" coefficient )
+*  Gas Cell utility modification
+*  Correction in Monte Carlo Eloss and Range plots
+________________________________________________________________________
+
+ 9.6.123 09/30/13
+
+*  Transmission window: new orders, new positions
+*  Menu "1D-plot" -> "Transmission characteristics" : new parameter "#2 Total isotope transmission"
+
+* using p,n reaction in DifCS dialogs  (TwoBody reaction)
+________________________________________________________________________
+
+9.6.119 08/14/13
+
+* Help-links in the Kinematic calculators
+* Correction in GetT12 for private_line. Crash in Delay block
+
+________________________________________________________________________
+9.6.117 08/06/13
+
+* Help-link for Charge states from energy in the Mechanism dialog
+* Increase of distribution dimension for charge state plots
+
+________________________________________________________________________
+9.6.116 08/01/13
+
+* New LISE++ block :  "Shift"
+
+* Update in block selection at the Spectrometer Scheme
+* LISE++ block "Shift" transmission
+* Subtitles Correction in W_Graph
+
+________________________________________________________________________
+9.6.112 07/31/13
+
+* D-line files in LISE++ package
+* increase precision in Setup dialog for length, fields, and in LPP-files
+* modification for negative angle in ED
+________________________________________________________________________
+
+9.6.108 07/29/13
+
+* E-dipole - Eom - dimension correction (om_mm)
+* Erho solution for ED @ MC,  P-solution for Ed  @ Analytical
+* ShowSetup -- Energy beam format modification
+* Equad -- options : matrix keeping, automatical U recalculation, and U-keeping, autom.recalc
+* Edipo - matrix calculation in the block
+* Edipo - option of automatical matrix recalcualtion
+
+________________________________________________________________________
+
+9.6.102  07/25/13
+
+* Analytical & MC solutions for Electrostatical dipoles
+* Erho selection in MC transmission
+* Brho-alayzer modification for dispersion
+* Equilibrium thickness from SRIM
+* Modification Dim & Unit in distributions
+* Global revision Beta,Gamma,Brho, Erho functions
+
+_________________________________________________________________________
+
+9.6.95  07/22/13
+
+* Window Message in the case of error in MC_trans_init_array (for debug)
+* Modification WGauge for MCm and creation TStatusBar for MC initialization
+* Scroller revision in TWindowList
+* The Reaction parameter in MC output file
+
+* new threshold: 30 000 ions for Monte Carlo transmission calculations
+* new threshold: 30 000 ions for analytical transmission calculations
+* new threshold: 300 blocks available in LISE++
+
+* New address for dynamical menu. New indexation!!!
+
+* Corrections in the "Analytical Calculation" button @ MC transmission dialog
+* Erho parameter in MC transmission dialog
+* Erho plots
+* Correction for the "Beam-Fragment charge states" plot in the case of Stripper
+
+* Electrical dipole Optical Matrix calculation (Electric rigidity selection under construction)
+* Validation of all Edit values in the ElectirDipole dialog
+* Remember the last input mode (Brho or B) in Optical block dialogs
+* New button Fix Brho (Erho) value in the quadrupole dialogs
+* New kind of drift: Electrostatic quadrupole (including matrix calculation)
+* Glyph button correction in the case of change of Drift type
+* The "Ideal magnet" dialog revision
+
+_________________________________________________________________________
+9.6.75  07/11/13	
+
+* Correction in Multiple Reactions use  (when AF and PF together, and AF is the first)
+* Correction in Multiple Reactions use settings at loading the code with lpp.argument
+
+* Correction for message of IsoMode in the Rays Output generator
+* E.Dipole - scheme in the Dialog, new parameters Type of Bend, and TorRadius
+* Trajectory length cell in all Dipole dialogs (D6, Dip, ED, GFS)
+* New drift mode template --  e-quadrupole
+
+_________________________________________________________________________
+
+9.6.68  07/08/13	
+
+* Correction in MC transmission to avoid a crash (sigma-per & NCALC_MC)
+* Gauges in MC transmission & checking or memory for case of several isotopes
+
+* Calculation backward transmission (realistic)
+* Modifications in Matrix Kinematics (Fission, Two-body reactions)
+
+_________________________________________________________________________
+
+9.6.63  07/03/13	
+
+* Modifications in analytical calculations of transmission and kinematics in the
+  case of Two-body rand fission reactions
+* Correction in Output MC Rays dialog
+
+_________________________________________________________________________
+9.6.54  06/30/13	
+
+* User DifCS in MC transmission
+* Writing and Reading User DifCS to/from LISE++ files
+* User DifCS at the USer CS dialog
+_________________________________________________________________________
+
+9.6.50  06/25/13
+
+* Correction in the MC gate dialog
+* Special case in MC transmission, then FCup after Stripper with Charge state option on
+_________________________________________________________________________
+
+9.6.48  06/24/13
+
+* Modification in MC transmission for A/q, A-2q and A-3q parameters
+* Modification in MC transmission for plot initialization in the case of large number of distributions
+* Charge state checkbox modification in the case of non-zero argument at start-up
+* Corrections in MC transmission for negative Vz
+  (only positive Vz, previous condition was positive Energy )
+* Reconstruction in 2D-kinematic plots in the Kinematics dialog
+
+_________________________________________________________________________
+
+9.6.44  06/21/13
+
+* Utility menu : Differential cross sections utility, LAB<->CM converter
+* Modifications in the Kinematics calculator -- Dif Cross Section file button
+* Modifications in the Kinematics calculator (Monte Carlo mode)
+* MC transmission -- new parameters Velocity_Z, Velocity_X, and so on
+
+_________________________________________________________________________
+
+9.6.32  05/28/13     RF-kicker correction in taulise_optic
+9.6.31  05/23/13     new PACE4 version 4.20
+9.6.30  05/07/13     Modernization of Abrasion-Ablation for Initial Prefragment plot
+
+_________________________________________________________________________
+
+9.6.29  04/19/13     Modernization of output subtitles in the case of extended configurations
+9.6.28  04/19/13     Correction in MC plots due to bug after implementation Input rays file
+9.6.26  04/18/13     position in Dispersve plane for beam and fragment charge states
+_________________________________________________________________________
+
+9.6.25  04/17/13     Check button for Charge States in the Status bar
+_________________________________________________________________________
+
+9.6.23  04/16/13     Input of ions rays after target in MC
+9.6.21  04/11/13     several locations for output MC file
+9.6.20  04/10/13     MC gate optimization; creation of local checkpoints filters
+9.6.19  04/09/13     New A,Z,Q and other fields and filters in MC
+_________________________________________________________________________
+
+9.6.18  04/05/13     Update in dialogs for help links
+_________________________________________________________________________
+
+9.6.17  04/03/13     fix: serious bug in passing material for MC
+9.6.16  04/02/13     update of discovery.iso file
+_________________________________________________________________________
+
+9.6.15  03/26/13     correction for graph_text --- charge state, and length of string. was crash
+9.6.14  03/26/13     SISSI-LISE configuration and example file
+9.6.13  03/25/13     T1/2 error in for 1d-plot
+9.6.12  03/25/13     T1/2 error in W_ShowCalc
+9.6.11  03/25/13     T1/2 error in Database dialog
+9.6.10  03/25/13     links for lise pdf : rotate, edipole, gns, delay blocks
+
+9.6.9   03/22/13     fix for thick stipper in the case Projectile Fragmentation and UP
+9.6.8   03/21/13     becomes 9.6
+9.5.7   03/21/13     misspelling of "capture" word in the Fusion-information window
+
+9.5.6   03/09/13     modification for dME field 15 for 16 @ double  GetFromDatabase(Celement *Ct, int index, double &error){    //for W_Graph
+9.5.5   03/06/13     decreased threshould down log to 1e-25 in 2d =25 plots
+9.5.4   03/06/13     modification for dME field 15. everwhwere 16
+9.5.3   03/06/13     new database (d T1/2)
+9.5.2   03/06/13     "ys" time in T1/2 dbf   - yoctosecond 10^-24
+9.5.1   03/06/13     for DBF-file reserve dME for dT12, help for fission_barrier
+
+_________________________________________________________________________
+version 9.5        09.03.13
+
+
+* Fix ME error field for DB plots
+* new official version
+
+_________________________________________________________________________
+version 9.4.113    06.03.13
+
+* new database (d T1/2)
+*"ys" time in T1/2 dbf   - yoctosecond 10^-24
+* modification for dME field 15. everwhwere 16
+* dME field reserve for dT12 for DBF-file
+* decreased threshould down log to 1e-25 in 2d =25 plots
+* help for fission_barrier
+
+_________________________________________________________________________
+version 9.4.112    05.03.13
+
+* lise2013.dbf modification
+* Plotting the Private string in T12 2d plots
+* Plotting the private T12 string in the ShowCalc subroutine
+
+* Options file A1900_2013.lopt and lise_opt_cpp have been modified for plotting A1900 detectors
+
+* transmission calculations  up to LAST optical block, not for LAST  Q-optical block
+  -- came back to 9.4.94 version
+
+_________________________________________________________________________
+version 9.4.106    03.03.13
+
+* lise2013.dbf -- update
+* User AME2012.lme
+* new DBF timie string "private"
+
+* The "About" dialog modification
+* RF_Buncher : revision for Graph_goodies and analytical calculations
+
+_________________________________________________________________________
+version 9.4.101    28.02.13
+
+* RF_Buncher
+- configurations revision
+- analytical calculations
+- Graph_goodies (ellipse plot)
+
+* Pairing energies (P_x) plots
+_________________________________________________________________________
+version  9.4.97    26.02.13
+
+* bug: Contour projection plot is empty ->
+Graphics virtual size has been increased for better resolution by factor 10x10 in 01/2011.
+No implementations have been done in this context into the Projection subroutines.
+It has been fixed.
+
+_________________________________________________________________________
+version  9.4.96    26.02.13
+
+* lise2013.dbf, user_mass_excess_2012.lme  -- new default database and mass file
+
+* A1900_2013.lcn, A1900_2013.lopt -- new default files
+
+* last valuable block for transmission calcualtions is Dispersive,
+  in previous version it could be even a drift
+
+_________________________________________________________________________
+version  9.4.93    18.02.13
+
+* Acculinna2 extended configuration and example
+* Angular straggling plot modification
+_________________________________________________________________________
+version  9.4.90    30.01.13
+
+* RESOLUT configurations update
+* Optics Quad Setup : corrections for second order labels
+_________________________________________________________________________
+version  9.4.87    28.01.13
+
+* Resolut 3gap configurations
+  Buncher block proerty mdifcation
+
+* Solenoid block dialog
+  - Help link
+  - changes in the length message
+  - LengthWienFilter modification
+
+* Corrections for Plot25 due to abundance values in other modes
+* Fixed: Bug in the case charge state & stripper
+_________________________________________________________________________
+
+version  9.4.80    21.01.13
+
+* RF buncher
+ - RESOLUT.lcn in the package
+ - RF buncher in MC calculations
+ - RF buncher : tuning method
+* GXPF1B & GXPF1B5 masses in the package
+
+_________________________________________________________________________
+
+version  9.4.74   03.01.13
+
+* Abundance value of stable isotopes in T1/2 plot
+* Database half-life time scale has been modified (now from 10^-21sec)
+
+_________________________________________________________________________
+
+version  9.4.66   07.12.12
+
+* modification  in "decay analysis": evap+res -> Parent  and  Init Cross section
+* modification : interpolation  @ distribution2
+* correction in Abrasion-Ablation for Breakup  -> interpolation2
+* fission NP increased for n-evaporation
+* modification in thermalization subroutine for new axis
+* corrections for _o_mass.cpp
+* RGD - plot -- more digits in output file
+_________________________________________________________________________
+
+version  9.4.56   06.11.12
+
+* New Dn and Dp database calculated values
+* Read/Write in/to file correction for EPAX mode
+_________________________________________________________________________
+
+version  9.4.54   30.10.12
+
+* Modifications in the "Global" code and in LISE_global.dll
+* Secondary reactions : accounting reduced cross sections in the 1D-mode
+_________________________________________________________________________
+
+version  9.4.52   26.10.12
+
+* NRV - partner site : links from some LISE++ dialogs and menu
+* New user ME files: AME2011 & AME2011+GXPF1 (Z=16-22)
+* AA correction for the Breakup channel
+* No FTP server more. Download from HTTP
+* Correction for DB plots (extrapolation for User ME mass correction)
+* Update: Analysis of prefragment plots
+_________________________________________________________________________
+
+version  9.4.46  12.09.12
+
+* Modification of iso-files (table2012, discovery, discovery_lab)
+* thermalization of excitation energy based on NPA531 (1991) 709
+_________________________________________________________________________
+version  9.4.40  28.08.12
+
+* Choice of EPAX model for secondary reactions  @ SR dialog
+* Fix of bug for reaction mechanism parameter in the case of AF
+_________________________________________________________________________
+version  9.4.34  27.08.12
+
+* Utility menu: Plots of NSCL and FRIB rates
+_________________________________________________________________________
+version  9.4.32  14.08.12
+
+* S_d & S_t plots in the Database menu
+* Possibility to turn on/off a,p,n channels
+* Prefragment search utility modification
+* Modification for Initial prefgraments plot for AA @ the Evapoaration Calculator
+
+_________________________________________________________________________
+version  9.4.28  30.07.12
+
+*  Initial prefgraments plot for AA @ the Evaporation Calculator
+
+_________________________________________________________________________
+version  9.4.24  18.07.12
+
+* new block "RF_buncher" (still under construction)
+  - dialog
+  - RF-buncher plot
+  - RF-separator correction :  instead r->Gtv use r->Gtv_real
+  - no RF resolution in plot options, new bunch length in the beam dialog
+
+* Reaction mechanism
+  - new spontaneous fission formula (Karpov,Zagrebaev)
+  - probability for compound nucleus formation P_CN (E,l) V.Zagrebaev & W.Greiner, PRC78, 034610 (2008)
+  - new excitation plot with PCN option for Fusion-Residueal and Fusion-Fission
+
+_________________________________________________________________________
+version 9.4.15   25.06.12
+
+* new option : Zp_power for Leon's model might be changed
+* modification for non-equilibrium case for Global code:  Q_INIT = max(Z - 28, Q_INIT)
+
+* new default option file is A1900_2012.lopt
+* new option file A1900_2012.lopt
+* new option file GSI_FRS_2012.lopt
+
+_________________________________________________________________________
+version 9.4.12   18.06.12
+
+* new GSI configuration  "FRS - TA2 - CaveC (2012).lcn"		
+_________________________________________________________________________
+version 9.4.11   11.05.12
+
+* EPAX 3.01
+* Abrasion-Ablation revision
+
+_________________________________________________________________________
+version 9.4.04   beta    17.04.12
+
+* New S800 extended configuration
+* all A1900 configurations have been changed:
+   a. wedge defect thickness = 0.3%
+   b. extended configurations : beam emittance, tuning dipole after target, I2-wedge
+
+______________________________________________
+Version 9.4.03   beta    16.03.12
+
+* New LISE++ site : lise.nscl.msu.edu
+
+_________________________________________________________________________
+version 9.4.02 & 9.3.12   16.03.12
+
+* Fixed: calculated transmission has been cleared during reading file from disk.
+ !!! Important for versions  9.3.10-11  and 9.4.1 beta!!!!
+
+______________________________________________
+Version 9.4.01   beta    15.03.12
+
+* Asymmetrical momentum distributions
+
+_________________________________________________________________________
+Version 9.3.11   13.03.12
+
+* Checkbox for Faraday cup block to make it disable from the Setup window
+* Speed Optimization for Global matrices recalculation
+* Convolution  Momentum distributions analysis plots from the Universal
+  parameterization (Convolution) momentum distribution dialog
+
+_________________________________________________________________________
+Version 9.3.8    02.03.12
+
+* Correction in the Dispersion method for secondary target
+* Address of the LISE++ site ("groups/lise") has been changed.
+  Avoiding warning message, when LISE++ is checking for new version
+
+_________________________________________________________________________
+Version 9.3.6    22.02.12
+
+* Apertures for Rotation Blocks are disable by default
+* LowMatrixLimit set to 1e-10 for XX,YY,TT,PP component.
+  This condition is not applied to Rotation Blocks
+* Monte Carlo:  Passing Aperture bug for X-use -- fixed
+* If Optical Block Length equal to 0, then bounds are used just for one point (like slits)
+* Envelope plots: axis title has been changed
+_________________________________________________________________________
+Version 9.3.5    16.02.12
+
+* New properties of identification and label fonts for 2D-plots
+* Message for old version calculations
+
+_________________________________________________________________________
+Version 9.3.3    23.01.12
+
+* The Preference dialog: choice of the LISE++ working directory
+   for users with administrative privilegies
+* Initialization of the density array has been moved at beginning
+* New GSI configuration files
+_________________________________________________________________________
+Version 9.3      06.01.12
+
+* New official version
+
+_________________________________________________________________________
+Version 9.2.169  28.12.11
+
+* New names for elements 114 & 116
+_________________________________________________________________________
+Version 9.2.168  27.12.11
+
+* New isotope discovery data
+* Modifications in "discovery history" to read isotopes of light elements  (Z<10)
+* Changes in the "secondary reactions" calculations (case of zero or negative primary cross sections)
+* Changes in the "secondary reactions" dialog
+_________________________________________________________________________
+Version 9.2.164  13.12.11
+
+* modification in the evaporation cascade subroutines
+* Abrasion-Fission 3EER : using max values instead mean values for E.E.R.
+* fix some unsignificant bugs
+  => Evaporation calculator : chose nucleus
+  => Decay analysis dialog : absent window
+
+_________________________________________________________________________
+Version 9.2.155  08.12.11
+
+* element, rate and background colors have been changed
+* new order of decays. New file "table2012.iso" with decay information
+* Option of element, rate and background colors editing in the Isotope dialog
+
+_________________________________________________________________________
+Version 9.2.151  07.12.11
+
+* Revision of decays and half-lives
+* Correction in half-life calculation in the database and isotope dialogs
+
+* Extended version of the isotope dialog : "Decay Analysis"
+   => Call the "Decay analysis" dialog from the "Utility" menu & statistics window
+   => Double click left mouse button - show only database information
+   => "conflict" analysis of decay branch
+
+* New decay spontaneous fission formula : maximum of all them
+* revision of constant masses
+* corrections for 1D plot legends
+
+*  New decays :
+    => b- & a
+    => p & b+
+    => p & a
+    => SF & b+
+    => SF & b-
+
+_________________________________________________________________________
+Version 9.2.134 30.11.11
+
+* "inter"  modification for Distribution class  (important! impact to transmission calculation)
+* "inter2" modification for Distribution2 class (important! impact to transmission calculation)
+* Show discovery history availability in the chart of nuclides
+* New functions in LISE for EXCEL (inter, A1900 dipoles and so on)
+* Update of Isotope Discoveries for elements Ca,In,Sn,Pt
+* Fix of the new link for of JAEA (Japan Atomic Nuclear Agency Chart) 2010 Nuclear Chart
+* Call LISE++ database dialog from Transmission results window
+* Beta+ & Beta- results in Transmission results window
+
+_________________________________________________________________________
+Version 9.2.126  11.11.11
+
+* Spontaneous fission dialog & plots
+* Yield Plot gated for downstream block
+* Message (Gauge) how many blocks have remained at reading file
+
+* Options for PID plot :
+ 1) white color is available
+ 2) "+4,+5,+6" sizes are available
+ 3) option using "s" or "sec" is available.
+
+* Correction for Electromagnetic Excitation energy plot
+
+_________________________________________________________________________
+Version 9.2.118  04.11.11	
+
+* Correction: Z=112  -> "Cn" name
+* Fixed for the potential (fission): Inverse values for shells
+* Spontaneous fission dialog (template)
+* Modification of "Utilities" menu
+_________________________________________________________________________
+Version 9.2.113  29.07.11	
+
+* Modification for taulise_angle ("wedge_curiosity" with monoeneregtic wedge)
+_________________________________________________________________________
+version 9.2.112  27.07.11
+
+* Writing energy deposition 2D plot to file
+_________________________________________________________________________
+version 9.2.111  26.07.11
+
+* Modification for GFS block
+_________________________________________________________________________
+version 9.2.109  21.06.11
+
+* Quadrupole dialog: corrections to view a chrge stte of setting fragment
+
+_________________________________________________________________________
+version 9.2.108  13.06.11
+
+* PACE IV  v.4.19.2
+_________________________________________________________________________
+version 9.2.107  07.06.11
+
+* new NSCL high order optics configuration
+"A1900_extended_COSY_S800BL_LISE.lcn", where
+A1900 based on COSY maps, and transfer hall and S800BL
+are based on LISE++ 2nd order calcualtions
+_________________________________________________________________________
+version 9.2.106  27.05.11
+
+* Corrections in dipole matrix calculations
+* Corrections in high order global matrix calculations
+* NSCL high order optics configuration update
+_________________________________________________________________________
+version 9.2.102  25.05.11
+
+* New extended NSCL configurations (A1900, S800BL, A1900+S800BL)
+* "Link" sign in Quad-Edit utility
+* New isotopes and new element names update
+_________________________________________________________________________
+version 9.2.99   20.05.11
+
+* Correction for Ellipse Apperture MC transmission
+* Icons for Quads
+_________________________________________________________________________
+version 9.2.97   12.05.11
+
+* The Slits dialog modification :
+ - Angular acceptance for each block ellipse or rectangle
+ - Aperture option:  use for MC calculation
+ - Aperture option:  rectangle & ellipse
+
+* Options "Bounds On/Off" for All MC calculations
+* Corrections for Envelope transmission statistics
+* Correction for read/write slits characteristics in/from file
+_________________________________________________________________________
+version 9.2.88   03.05.11
+
+* Beam emmittance shapes
+* The "Setup" dialog -- new information cell: number of blocks value
+* The MC dialog - new button : the same block as X or as Y
+
+_________________________________________________________________________
+version 9.2.85   25.04.11
+
+ Submenu "Optics" in "Calculations" menu
+
+* Quad & Dipoles settings : EDIT
+* Quad & Dipoles settings : View & Print
+* First order matrix elements : view, print
+* First order matrix elements : PLOT
+
+_________________________________________________________________________
+version 9.2.79 beta  18.04.11
+
+* Clear transmission calculations for selected nucleus
+  Menu "Calculations -> Transmission and rate"
+
+_________________________________________________________________________
+version 9.2.78 beta  19.03.11
+
+* Correction in contour analysis for Mode=4 (spectrum from file)
+* PACE4 (v.4.18.4)    Gamma and Gate for A,Z for detailed analysis
+* InitRandom(void)  in LISE++
+* PACE4 (v.4.18.3)  new random generator (taken from LISE++)
+
+_________________________________________________________________________
+version 9.2.75 beta  06.03.11
+
+* PACE 4.18 -- Detailed analysis of emitted particles
+* Defect thickness can be equal to 0
+* Absorbed dose dialog from the target dialog
+
+_________________________________________________________________________
+version 9.2.71 beta  04.02.11
+
+* Ranges of MC_tab, CrossSec and SecReact increased up to 15 000
+* User DB file from the Production mechanism
+* Correction for Abrasion-Fission regions restore procedure
+_________________________________________________________________________
+version 9.2.68 beta  01.02.11
+
+* modifications for Abrasion-Fission 3-EER dialogue
+* wedge curiosity revision
+_________________________________________________________________________
+version 9.2.66 beta  26.01.11
+
+* DF4 distributions class has been updated:
+  + New dX_dP & dY_dP components
+  + Debug plots have been modified: two windows
+  + new classes "sigma_dP" in BLOCK, and "sigma_dS" in BLOCK_Component
+  + modification in transmission calculations due to this update
+
+* Monte Carlo :
+  + corrections in transmission statistics : reactions in material
+  + corrections in energy deposition : start point
+  + modifications in the transmission statistics window
+  + modifications in material passing subrotine
+
+_________________________________________________________________________
+version 9.2.57 beta  21.01.11
+
+* MC rays generator: new option "Range"
+* Modifications in the MC and MC rays generator dialogs
+* Range of  Momentum distribution plot for the Convolution model has been increased
+
+* Customizable Chart of the Nuclides:
+ - USing user iso and isolit files
+ - Axis, Grid and Border options
+ - Identification in 2D plot mode=25,35 (CS,T12 and so on)
+ - Option "Seconds" or "Days,Years" for T_1/2 2D-plots
+ - Plot.c virtual size has been changed from 1000 to 10000
+ - Graph.c virtual size has been renamed to VirtSizeG, and still equal to 1000
+ - subscript text in Graphics
+_________________________________________________________________________
+version 9.2.43 beta  07.01.11
+
+* Thickness defect for Target and Stripper
+* New option for stripper : use  for charge state calculations
+_________________________________________________________________________
+version 9.2.38 beta  23.12.10	
+
+* Stripper foil utility :  Rotating target + Pulsing beam
+* Stripper foil utility :  Initial temperature
+* Stripper foil utility :  Rotating target -> using X_radius instead reduced one,
+  link for LISE documentation, correction for gaussian beam density ydistribution
+
+* Correction due to "superlong" configurations
+_________________________________________________________________________
+version 9.2.33 beta  10.12.10	
+
+* Dipole (dispersive block): Transport solution
+  of 1st and 2-nd orders including  fringing fields
+
+* New utility dialog: "The First- and Second-Order Matrix Elements for an Ideal Magnet"
+* Cuts Edge effect option for transmision calculation  (the "Option" dialog)
+* Increasing possible number of blocks from 94 to 194
+* correction in link with cosy matrices
+* correction in the transmission statistics dialog
+_________________________________________________________________________
+version 9.2.25 beta  21.11.10
+
+* correction: indexation in dynamical submenu has been changed
+_________________________________________________________________________
+version 9.2.24 beta  19.11.10
+
+* new option for quadropoles : keep matrices, calculate fields
+* Update COSY links for optical blocks
+* Calculate automatically Drift-block matrices
+* Analyzing 2D-historgam ROOT files by the BI code
+* modification in plot drawing
+_________________________________________________________________________
+version 9.2.19 beta  14.10.10
+
+* Fixed: Crash in ShowCalc (Increasing number of rows and string size)
+_________________________________________________________________________
+version 9.2.18 beta  08.10.10
+
+* Analyzing 1D-historgam ROOT files by the BI code
+_________________________________________________________________________
+version 9.2.17 beta  05.10.10
+
+* Pseudo MC plot: crash in rotation blocks. Fixed
+_________________________________________________________________________
+version 9.2.16 beta  27.09.10
+
+* Monte Carlo : List of isotopes. Modifications to get initial yields
+_________________________________________________________________________
+version 9.2.15 beta  15.09.10
+
+* Corrections for TKE-calculations in pseudo MC plot
+* New isotopes history added for Z=23,36,47
+* line of observed neutron-rich isotopes line for Z=63-92
+_________________________________________________________________________
+version 9.2.13 beta  07.09.10
+
+* Discovery information has been implemented for Z=26,27,48,56
+
+Monte Carlo simulation
+* Normalization in Energy deposition for group of isotopes
+* Modification for Energy loss in detector (range), where particle is stopped
+* increase of the limit of the number of isotopes (1e4) for the MC group
+* increase of the limit of the number of rays (1e6) to write in output file
+_________________________________________________________________________
+version 9.2.8 beta  27.08.10
+
+* Correction in MC transmission calculation against crash
+   in the reaction place subroutine at negative energy
+_________________________________________________________________________
+version 9.2.7 beta  17.08.10
+
+Modifications for fission reactions:
+*  in the case of fission : taulise.cpp => GX.currA->shift(-AX_shift);
+*  no fission_flag for ang_distributions in taulise_ang
+_________________________________________________________________________
+version 9.2.5 beta  16.08.10
+
+* Celement::name ->correction for Abrasion-Fission reactions
+* c_plot.cpp  : corrections for Envelope mode -- show all in the case of fission
+* modifications for the case : fission & beam inclination (Distribution mode)
+* modifications for the case : fission & low energy  (MC mode)
+_________________________________________________________________________
+version 9.2.3 beta  15.08.10
+
+* modifications in MakeAngOptic: no shifts
+* modifications in BlockOptics : local coefficients changed
+* new version PACE4 (4.17) from Jenna Smith (smithj@nscl.msu.edu):
+   1. GILBERT & CAMERON parameter for LITTLE-A is FACLA==0
+   2. Result output modifications
+_________________________________________________________________________
+version 9.2.2 beta  11.08.10
+
+* taulise anglular :: TR_A -- changes for mom_store and its gate
+* correction for Calc_list in Faraday cup case
+* correction for MakeAngOptic. Substitution for Extrapolation function
+* 1st attempt for rotation blocks
+_________________________________________________________________________
+version 9.2.1 beta  10.08.10
+
+* DF4 class:  new AX nad Ay distributions
+* new parameters: i_sigma_mrad[]
+* DF4 debug for angular distributions
+* DF4prev in taulise (anglualr and optical)
+* DF4 debug plot: current and previous modes
+* defocusing in taulise_optic
+
+_________________________________________________________________________
+version 9.1.19      09.08.10
+
+* Corrections: Target-wedge, Wedge-wedge and Kicker optimizations crash
+_________________________________________________________________________
+version 9.1.18      05.08.10
+
+* Changing Local to Global matrices for accumulation uncertainty coefficient "mm_%"
+
+_________________________________________________________________________
+version 9.1.17      04.08.10
+
+* New NSCL configuration and option files
+_________________________________________________________________________
+version 9.1.16      30.07.10
+
+* Correction to plot calculated primary beam charge states after opening file
+* Charge state plot. Non-equilibrium case has been excluded
+* Brho calculations: modifications in the get_spline subroutine
+
+_________________________________________________________________________
+version 9.1.13      22.07.10
+
+* Fixed : loading LPP-files with AF production mechanism
+_________________________________________________________________________
+version 9.1.12      20.07.10
+
+* New 45 isotopes from the RIKEN experiment have been implemented
+* Charge state after reaction in the Production mechanism dialog
+* Correction for Pseudo MC plot detector resolution
+_________________________________________________________________________
+version 9.1.9       30.05.10
+
+* Corrections for Primary beam transmission without target
+_________________________________________________________________________
+version 9.1.8       28.05.10
+
+ * Corrections for Fission reactions in MC calculations - Isotope group option
+_________________________________________________________________________
+version 9.1.7       26.05.10
+
+ * Evaporation calculator modifications
+_________________________________________________________________________
+version 9.1.5       21.05.10
+
+ * Evaporation calculator: output CS files format has been changed
+_________________________________________________________________________
+version 9.1.4       19.05.10
+
+ * Correction for the MC mode in the case Moyal shape of energy straggling
+_________________________________________________________________________
+version 9.1.3       12.05.10
+
+ * List of isotopes in MC mode
+ * Escape and gauge in MC plot accumulation
+_________________________________________________________________________
+version 9.1         30.04.10
+
+ * New official version
+_________________________________________________________________________
+version 9.0.43      26.04.10
+
+ * The MC dialog has been changed
+ * Transmission modification in case of fission without angular acceptance
+
+_________________________________________________________________________
+version 9.0.39      19.04.10
+
+* New configuration "A1900_expanded"
+* Statistics by block for Monte Carlo Envelope mode
+* Using physical aperture to caluclate transmission inside of blocks for
+  MC envelope mode
+_________________________________________________________________________
+version 9.0.34      15.04.10
+
+* Quadrupole and Sextupole modes in the Drift block
+  with possibilities to calculate optical matrices (1st and 2nd order)
+
+* Modifications in LISE_Excel : corrections for GLOBAL calculations
+
+_________________________________________________________________________
+version 9.0.28      12.04.10
+
+* Secondary reaction area has been increased for fragmentation
+* New MARS spectrometer configuration, The Discovery button in the Isotpes dialog is disable
+_________________________________________________________________________
+version 9.0.26      04.04.10
+
+* Correction for fission case in the new version of transmission calculations
+* Modifications in the optical block transmission
+_________________________________________________________________________
+version 9.0.23      30.03.10
+
+* Modifications in the wedge transmission subroutine
+_________________________________________________________________________
+version 9.0.22      25.03.10
+
+ * The Gas Density dialog is available from the  MCP144 utility
+ * Setup window timer update
+_________________________________________________________________________
+version 9.0.20      23.03.10
+
+ * Modification of the MC gate dialog
+ * Correction for the case: Wedge thickness =0, angle!=0
+_________________________________________________________________________
+version 9.0.18      20.03.10
+
+ * Modifications in Discovery database. As,W,Au have been added
+ * Several gates for MC calculations
+ * Block position for the Envelope mode in MC calculation
+__________________________________________________________________________
+version 9.0.14      15.03.10
+
+ * The Envelope mode in MC calculations
+__________________________________________________________________________
+version 9.0.10      10.03.10
+
+ * Transmission statistics block by block for Monte Carlo calculations
+__________________________________________________________________________
+version 9.0.08      05.03.10
+
+ * Preparation for 64-bit Windows 7
+ * Preparation for new installer
+ * new main_init arrays
+ * new "version" class
+ * Update User fies menu
+ * GlobalPermissionSetupRedraw
+ * test_ESC was killer in AbrasionFission (Low) in o_Manage_AA.cpp
+
+__________________________________________________________________________
+version 8.5.51      01.03.10
+
+ * New LISE fragment separator configurations files
+__________________________________________________________________________
+version 8.5.50      28.02.10
+
+ * MC modifications: ray generator to file. + Energy loss and Cross sections
+ * MC modifications for counters and speed calcualtion: no timer, no division
+__________________________________________________________________________
+version 8.5.47      18.02.10
+
+ * Modifications of ToF calculations in MC mode
+__________________________________________________________________________
+version 8.5.46      16.02.10
+
+ * Option on/off for a material to be used in Q-state calculations
+   (dialoges "Material", "Wedge", "Target")
+ * Corrections for Q-state calculations in MC mode
+__________________________________________________________________________
+version 8.5.44      09.02.10
+
+ * Corrections for MC high order calculations
+__________________________________________________________________________
+version 8.5.43      04.02.10
+
+ Wien filter revision:
+ * "floating" matrix solution: dispersion is calculated
+    for each ion for MC & distribution methods
+ * Pseudo MC and ellipses plot were corrected as well
+ * Wien filter dialog modification (lengths,disp.coefficient)
+  http://groups.nscl.msu.edu/lise/8_5/8_5_040_Wien.pdf
+
+ * Ellipse plot: possibility to write data in file
+__________________________________________________________________________
+version 8.5.38      02.02.10
+
+ * Access to Discovery of isotopes
+ * Element names in the Isotope, Database dialog and Show Statistics window
+ * Monte Carlo transmission: Isotope group calculation  -> secondary target
+__________________________________________________________________________
+version 8.5.34      28.01.10
+
+ * Monte Carlo transmission: Isotope group calculation
+__________________________________________________________________________
+version 8.5.28      15.01.10
+
+ * Custom shape degrader:  polynomial solution
+   http://groups.nscl.msu.edu/lise/8_5/8_5_028_CustomShapeDegrader.pdf
+
+ * Database plot: option "decay mode"
+ * Plotting data : "NO LINE" option through the Method drawing dialog
+ * Plotting errors : option "turn  off"
+ * Plotting Legend or caption : option "turn  off"
+ * "BI" code: corrections for 1-dimensional file
+ * Solenoid block in the "Setup" dialog: modifications
+ * Brho scanning utility: modifications for fission case
+
+__________________________________________________________________________
+version 8.5.17      08.01.10
+
+ * New option "Custom shape" for a energy-loss degrader ("wedge")
+   Available trhough the "Wedge" dialog
+__________________________________________________________________________
+version 8.5.11      15.12.09
+
+ * Several modifications incuding the correction of E=f(B,v) function for Wien-filter
+__________________________________________________________________________
+version 8.5.8       05.11.09
+
+ * New version of ISOL catcher includes fusion-residual, user excitation files,
+   materials fron and behind the target
+ * Option : Y-title turn on 180 degrees for screen (Mac's case)
+ * Erasing space in COSY log-files for high order optics. MP's request
+ * Magnification optic coefficients should be not equal to zero. LISE++ checks and corrects.
+ * Modification for Abrasion-Fission reaction if User Cross section & Secondary reactions options set
+ * Changes to get new option and configuration files for users without admin.privileges
+ * Correction in Monte Carlo transmission calculations for Length
+__________________________________________________________________________
+version 8.4.1       17.09.09
+
+ * Official version 8.4
+__________________________________________________________________________
+version 8.3.169   15.09.09
+
+ * Stripper cross sections can be selected as EPAX1, EPAX2, EPAX2_modified
+   according settings for Fragmentation cross sections. But No Abrasion-Ablation!
+ * New optics for A1900
+ * Modifications for Angular and Lateral Stragglings in Physical Calculator
+__________________________________________________________________________
+version 8.3.167   14.09.09
+
+ * Modifications in COSY map reading subroutine
+ * Optics dialog
+__________________________________________________________________________
+version 8.3.164   10.09.09
+
+ * New A1900_2009 option and configuration files
+ * Increase of precision to write/view Optical matrices
+ * Correction in Qgg plot
+ * Pfaff option (Velocity dialog) -> exclude charge-exchange (n,p) & (p,n) reactions
+__________________________________________________________________________
+version 8.3.158   04.09.09
+
+ * High Order Optics in LISE++
+
+ (see http://groups.nscl.msu.edu/lise/8_3/HighOrder_v8_3_158.pdf)
+__________________________________________________________________________
+version 8.3.155   12.08.09
+
+ * New database (GANIL) isomers (Z=51,52) from JMD
+ * Output format of text files from LISE++ plots
+__________________________________________________________________________
+version 8.3.153   07.08.09
+
+ * Pickup dialog : proton&neutron mode,excitation energy plot
+    cross sections from geometrical intersections
+ * link for "Isomer (GANIL)" has been changed to redirect on MSU site due to innovations with GANIL server
+ * The Evaporation dialog: modification in the Decay analysis
+__________________________________________________________________________
+version 8.3.148   16.07.09
+
+ * Excitation energy entry in the Cluster radioactivity dialog
+ * Delay Block construction has been finished including plots
+ * Kinematic calculator: correction for the case of neutron
+__________________________________________________________________________
+version 8.3.144   10.07.09
+
+ * New BLOCK in the code: Delay block (see the Setup dialog)
+ * PACE4 & database
+ * Cluster radioactivity dialog
+__________________________________________________________________________
+version 8.3.140   30.06.09
+
+ * Plot from the "Alpha decay" dialog
+ * The "Alpha decay" dialog from the "Utilities" menu
+__________________________________________________________________________
+version 8.3.138   29.06.09
+
+ * Correction in tunneling.f
+ * Compound target in the Kinematics Calculator
+ * Corrections for Contour statistics in MC plot (mode ~26 from Kinematic calculator)
+__________________________________________________________________________
+version 8.3.135   26.06.09
+
+ * total revision table of nuclides (decay modes), observed isotopes
+ * New indexation in the database
+ * New Timing intervals for half-lives, revision of half-lives in the database
+ * half-life option to search for the Proton-dripline in the Isotope dialog
+ * "Wait" messages for the Isotopes dialog and T12 plots
+ * modification of T12 plots
+ * second new program for tunneling (the proton radioactivity dialog)
+__________________________________________________________________________
+version 8.3.123   18.06.09
+
+ * compilation of half-lives (see menu "Database->Plot->T12")
+ * the "tunnel.f" modification
+ * Halflives calculation : modification, optimization. Plots
+ * The "About" dialog from The Database dialog
+
+__________________________________________________________________________
+version 8.3.118   15.06.09
+
+ * the Database dialog : alpha,beta,proton-emission halflives
+ * The Proton radioactivity dialog: new options
+ * beta halflives database file
+ * alpha halflives database file
+ * beta+ plot & beta+ cell in the Database dialog
+__________________________________________________________________________
+version 8.3.111   09.06.09
+
+ * The Proton radioactivity dialog (Menu "Utilities") :
+   Tunneling for proton-rich isotopes to estimate half-lives
+__________________________________________________________________________
+version 8.3.109   03.06.09
+
+ * Modification of transmission calculation
+__________________________________________________________________________
+version 8.3.108   22.05.09
+
+ * Modification of initial angular distribution after stripper
+__________________________________________________________________________
+version 8.3.107   19.05.09
+
+ * Corrections in Rotation block module
+ * FRIB logo
+ * internal : creation of an user file from the table of nuclides
+__________________________________________________________________________
+version 8.3.103   04.05.09
+
+ * LISE for Excel 2007, see for details
+   http://groups.nscl.msu.edu/lise/changes.html
+__________________________________________________________________________
+version 8.3.102   23.04.09
+
+ * New mass excess file HFB17.lme
+ * Correction for Batch-mode calculations (memory leak problem)
+__________________________________________________________________________
+version 8.3.100   02.04.09
+
+ * Correction for velocity calculation in the case pickup at low energies
+ * New version warning has been corrected
+__________________________________________________________________________
+version 8.3.98   31.03.09
+
+* Correction of the Bass Fusion barrier for light particles in LISE++ and PACE4
+  (problems with the radius for light particles)
+__________________________________________________________________________
+version 8.3.97   27.03.09
+
+ * Target-wedge optimization process: possibility to  cancel
+ * Corrections in MC subroutine for particles stopped/passed in material (transmission)
+ * Kinematic calculator's  "Energy at the entrance of detectors" field corrections
+__________________________________________________________________________
+version 8.3.93    09.02.09
+
+ * Modification of velocity calculations for the nucleon pickup case
+ * Modification of The Channel Width plot in the Evaporation options dialog
+ * Number of Quadrupoles for a block (scheme)
+__________________________________________________________________________
+version 8.3.90    06.01.09
+
+ * New fission barrier model. File "fis-bar-Moller08.dat"
+   P.Moller et al., Los Alamos NL preprint  LA-UR-08-4190
+__________________________________________________________________________
+version 8.3.89    05.01.09
+
+ * New Mass Excess file "ktuy.lme" -  H.Koura et al., PTP 113 (2005) 305
+   LISE++ table of nuclides has been corrected based on this file
+__________________________________________________________________________
+version 8.3.88    31.12.08
+
+ * Option of n- and p- odd-even corrections for Qg-plot & Qgg-plot
+__________________________________________________________________________
+version 8.3.86    11.12.08
+
+ *  Output file with momentum distribution characteristics from the Fragmentation dialog
+ *  Convolution momentum distribution: new boundaries (increasing range)
+ *  Modifications: Surface separation energy, LISE++ geometrical corrections for AA, Prefragment search
+__________________________________________________________________________
+version 8.3.83    10.12.08
+
+ *  New Qg-plot from the 1D-plot menu additionally to Qgg-plot
+ *  Modification of Separation energy for the Convolution model
+ *  Convolution model : modification of mean velocity calculation
+ *  Gamma-factor in the Momentum width tab of the Fragmentation dialog
+ *  Convolution model : velocity plot modification
+ *  New parameter for Morrissey's velocity distribution
+__________________________________________________________________________
+version 8.3.77    14.11.08
+
+ * New LISE++ paper (EMIS2007).
+   for citations please use <NIM B 266 (2008) 4657..4664>
+   The paper is available through the LISE++ About dialog
+
+ * MOTER 2.1.11.  Optimization is available
+
+ * Curved profile degrader plot. Slit size value has been changed to plot.
+__________________________________________________________________________
+version 8.3.75    14.09.08
+
+ * Fixed: Problem with "Winger" charge states at high energies
+ * Fixed: Problem with "Global" charge states at low energies
+ * Optimal target thickness for the primary beam
+__________________________________________________________________________
+Version  8.3.72   27.08.08
+
+ * MC transmission includes the option of loss due to reactions in materials
+ * Fragment transmission: corrections for tiny values of optical matrix elements
+__________________________________________________________________________
+Version  8.3.70   07.08.08
+
+ * Display transmission of unsetting fragments in the Table of nuclides
+__________________________________________________________________________
+Version  8.3.69   22.07.08
+
+ * Charge state optimization & Optimal target subroutines vs FPiM
+ * New MOTER version 2.1.8
+__________________________________________________________________________
+Version  8.3.68   17.07.08
+
+ * Urgent Update of the Target dialog for the "fusion" case
+__________________________________________________________________________
+Version  8.3.67   16.07.08
+
+ * Registry assignment of files "lcn","motrace","motsec" to LISE++ ,
+   and "moter" to MOTER
+ * Exit LISE++ from the MOTER plot utility
+ * New MOTER version 2.1.5
+__________________________________________________________________________
+Version  8.3.66   14.07.08
+
+ * executing LISE++ from MOTER to read files "motsec" & "motrace"
+ * Modification of the Wedge profile dialog
+ * Transmission statistics dialog update (rate/background ratio)
+ * Target dialog update (Energy loss & d/R)
+__________________________________________________________________________
+Version 8.3.62   09.07.08
+ * MOTER version (2.1) -- new I/O file format  "*.moter"
+ * New GANIL configurations
+__________________________________________________________________________
+Version 8.3.60   01.07.08
+ * MOTER result filenames have been changed
+__________________________________________________________________________
+Version 8.3.59   27.06.08
+
+ * Solenoid tuning has been done
+ * Choice of solenoid block tuning parameter for
+ * Tuning plot for the Solenoid block
+ * Correction for calculation of MC dp/p value
+________________________________________________________________________
+Version 8.3.52   09.06.08
+
+ * X,T,Y,P,E values and their StDev values in the Solenoid block dialog
+ * Access to NNDC wallet and JAEA (Tokai) databases
+    through fragment transmission window
+__________________________________________________________________________
+Version 8.3.49   04.06.08
+
+ * Recalculation of Solenoid matrix for each event
+   (fragment,energy) in Monte Carlo mode
+ * Access to NNDC database through fragment transmission window
+__________________________________________________________________________
+Version 8.3.47   03.06.08
+
+ * Solenoid block in LISE++ file
+__________________________________________________________________________
+Version 8.3.46   02.06.08
+
+  * Solenoid block is in LISE++ use (Optical matrix, selections)
+__________________________________________________________________________
+Version 8.3.45   29.05.08
+
+  * Upgrade of the TwinSol utility: plots of Function (1) from (2) at (3)
+    where (1),(2), and (3) are user's choices
+
+  * New Solenoid block in LISE++ (still under construction)
+__________________________________________________________________________
+Version 8.3.39   22.05.08
+
+  * New MOTER version 2.0.22
+  * Format of MOTER block position has benn changed (X_MAX, Y_XAX)
+  * Smoothing T & P distributions (MOTER plot utility)
+  * Modification of smoothing utility for MOTER field distributions
+  * "MOTER" button from the MOTER plot utility
+__________________________________________________________________________
+Version 8.3.35   19.05.08
+
+  *  Trajectory and field 1d-plots for the MOTER plot utility
+  *  New SuperFRS configuration files
+  *  Modification of utility of fragment passed/stopped ratio for material
+  *  FWHM calculation correction
+  *  Cleaning, Average, smoothing of field distributions (MOTER utility)
+  *  Ray selection for field plots (MOTER utility)
+  *  File view in MOTER plot dialog (MOTER utility)
+  *  MOTER field plot :  block positions
+__________________________________________________________________________
+Version 8.3.23   12.05.08
+
+  * Plot of MOTER FIELD trace results (1D-plots):
+  * New MOTER version 2.0.18.2
+__________________________________________________________________________
+Version 8.3.22   09.05.08
+
+  * Plot of MOTER trace results (locations 2D-plots):
+     Several trace Plots in one window
+
+  * Several Plots (plot type=25) in one window
+  * Contour class modification
+__________________________________________________________________________
+Version 8.3.21   08.05.08
+
+   Histogram method to draw 1D-plot has been implemented
+   Update: Plot of MOTER trace results
+
+__________________________________________________________________________
+Version 8.3.18   07.05.08
+
+   Plot of MOTER trace results
+
+__________________________________________________________________________
+Version 8.3.17   29.04.08
+
+  * Shift of RF TOF for the RFkicker in MC transmission mode
+  * Angular distribution for projectile fragmentation : edge effect
+  * The "Cancel/Coninue?" dialog after pressing "Escape" in calculation mode
+
+__________________________________________________________________________
+Version 8.3.14   27.04.08
+
+   Kinematics Calculator:
+   *  3 possible reaction places
+   *  option for Kinematics plot : taking into account energy
+      loss of  fragments in the target
+__________________________________________________________________________
+Version 8.3.13   23.04.08
+
+   Stripper Foil Dialog : LISE++ function k1(Z)
+   Stripper Foil Dialog : Sublimation [1] - plot range revision
+
+__________________________________________________________________________
+Version 8.3.9    21.04.08
+
+   Stripper Foil Dialog :  File I/O
+   Stripper Foil Dialog : size optimization
+   Correction for pseudo MC 2D-plot
+
+__________________________________________________________________________
+Version 8.3.6    18.04.2008
+
+   Upgrade of the Stripper foil lifetime utility
+
+__________________________________________________________________________
+Version 8.3.5    16.04.2008
+
+   New utility: Stripper foil lifetime
+
+__________________________________________________________________________
+Version 8.3.4    07.04.2008
+
+   Optimization of MC Rays generator
+
+__________________________________________________________________________
+Version 8.3.3    07.04.2008
+
+   Plot dialog: button "NZ chart"
+   Set the next parameters:  "2D", X="N", Y="Z", "N"=0-200
+
+__________________________________________________________________________
+Version 8.3.2    06.04.2008
+
+   MC dialog : Rays generator (see button "MC calculation to file")
+
+__________________________________________________________________________
+Version 8.3.1    04.04.2008
+
+   2D plot Contour : new calculated value <XY> = (x-<x>)(y-<y>)
+
+__________________________________________________________________________
+Version 8.1.4   28.02.2008
+
+  Corrections: transmission with use of x/y, x'/y',x/y' etc.
+  Important in the case of the ROTATION block
+
+__________________________________________________________________________
+Version 8.1.3
+
+  Fix: "Edge effect" for  fission fragment transmission
+
+__________________________________________________________________________
+Version 8.1.2   22.02.2008
+
+  Correction for the "FPiM & Charge states" combination
+
+__________________________________________________________________________
+Version 8.1.1   18.02.2008  (see "changes" at the LISE site)
+Version 8.1.0   05.12.2007
+__________________________________________________________________________
+Version 8.0     04.05.2007
+
+    * Fragment production in material (secondary target)
+    * Monte Carlo calculation of transmission
+
+__________________________________________________________________________
+Version 7.9.5   31.08.2006
+
+ Fusion-Fission
+
+    * Production cross-sections
+    * Transmission F.-F. fragments through a fragment separator
+    * Combination of consecutive transmission product calculation
+       for several reactions
+
+__________________________________________________________________________
+Version 7.8
+
+New Utilities
+
+    * Twinsol (solenoid) utility:  ray trace and matrix solutions
+    * ISOL catcher utility
+    * Wedge-wedge optimization
+    * Kinematics calculator:   Mott scattering
+    * Decay channel analysis
+
+__________________________________________________________________________
+Version 7.7
+
+Isomers in LISE++
+
+    * Database of isomeric states
+    * Isomeric gamma-spectrum
+    * Identification 2D-plot in coincidence with gamma-rays
+
+__________________________________________________________________________
+Version 7.6    12.01.2005
+
+     RF separation system
+__________________________________________________________________________
+version 7.5    24.08.2005
+
+* ABRASION-FISSION
+
+* New Utilities
+   Target & Wedge optimization
+   Optimum charge state combination mode
+   Append LISE blocks from file
+   Batch-mode transmission calculations
+
+* Corrections and modifications
+   Secondary Reactions (acceleration filters)
+   Wedge angle calculation
+   Curved profile degrader
+   Break-up channel in evaporation cascade
+   Using Shell and Odd-Even corrections for fission barriers
+   New block: FARADAY CUP
+__________________________________________________________________________
+version 7.2  09.09.2004
+
+* Database AME2003
+* New LDM fits
+__________________________________________________________________________
+version 7.1    14.06.2004
+
+   Coulomb FISSION
+__________________________________________________________________________
+version 6.5.5   28.01.2004
+
+ 2D fragment plots from "Kinematics calculator"
+ in modes "Breakup" and "Two body reaction"
+__________________________________________________________________________
+version 6.5     16.01.2004
+
+ ISOL mode
+ mass separator "MASHA"
+__________________________________________________________________________
+version 6.4       09.12.2003
+
+ Total revision of Abrasion-Ablation
+ LISE for "unprivileged" users
+ User’s Mass-Excess file
+ User’s Cross-Section file
+__________________________________________________________________________
+version 6.3       16.09.2003
+
+ "GLOBAL" for "Windows"
+ NonEquilibrium Charge States Calculations
+ Fission channel in evaporation cascade
+__________________________________________________________________________
+version 6.2.2    13.06.2003
+
+  New optical blocks
+       * gas-filled dipole
+       * electric dipole
+       * compensating dipole
+  Brho analyzer
+  Code "Charge"
+  Sub-barrier fusion
+  Transport envelope calculation package
+__________________________________________________________________________
+version 6.1     30.11.2002  LISE++
+
+  Block structure: design your own spectrometer
+__________________________________________________________________________
+version 5.15.6   04.06.2002
+
+5.15.1 PACE4 - corrections 5.15   Transmission of fusion residual through the spectrometer
+___________________________________________________________________________
+version 5.13.5   15.01.2002
+
+5.13 INI-files(liz,lcf,opt,ini)
+___________________________________________________________________________
+version 5.12.2   03.01.2002
+
+5.12   PACE4 (fusion-evaporation code)
+5.11.5 Abrasion-Ablation calculations have been modified
+___________________________________________________________________________
+version 5.11.4   27.11.2001
+
+5.11.4 File converter FORTRAN->C
+5.11.3 New fragment velocity calculation method
+5.11.2 The bug with checking of the new version :-(  Sorry.
+5.11.1 Option of  primary beam scattering
+___________________________________________________________________________
+version 5.10.5   23.10.2001
+
+The handbook of nuclear spectrometry (J.Kantele)
+55 procedures from 58 are realized
+___________________________________________________________________________
+version 5.9     28.09.2001
+
+Units converter
+___________________________________________________________________________
+version 5.8.1     25.09.2001
+
+A bug in Kinematics calculator
+___________________________________________________________________________
+version 5.8       10.09.2001
+
+a. auto-mode for Abrasion-Ablation
+b. on-line LISE's analysis of experimental plots
+___________________________________________________________________________
+version 5.7       10.08.2001
+
+LISE & EXCEL
+___________________________________________________________________________
+version 5.6.2     24.07.2001
+
+LISE & Internet
+    a. access to isomers and TOI database
+    b. check to the new version
+    c. mail and registration from the code
+
+  Options files
+  Plot TOF-Xdispersive
+___________________________________________________________________________
+version 5.5.2   13.07.2001
+
+Print of the dialogs "Physical Calculator" and "Goodies"
+Brho Scanning Plot
+___________________________________________________________________________
+version 5.4   25.06.2001
+
+Abrasion-Ablation v.1.3
+___________________________________________________________________________
+version 5.3   22.06.2001
+
+Default values. Start configuration
+___________________________________________________________________________
+version 5.2   20.06.2001
+
+Excitation energy. Abrasion-Ablation v.1.2
+___________________________________________________________________________
+version 5.1   18.06.2001
+
+transformation AMeV -> MeV/u
+___________________________________________________________________________
+version 5.0   06.06.2001
+
+*******
+___________________________________________________________________________
+version 4.20  05.06.2001
+
+1. Including of ATIMA-code
+___________________________________________________________________________
+version 4.19.5  22.05.2001
+
+1.Evaporation calculator
+2.Geometrical Abrasion-Ablation model
+___________________________________________________________________________
+version 4.16.4  16.04.2001
+
+1.Kinematics calculator
+2.LISE.doc
+___________________________________________________________________________
+version 4.15  23.03.2001
+
+Plot calibration utilities
+___________________________________________________________________________
+version 4.14  14.03.2001
+
+A1900 dipoles calibration
+Monte-Carlo plots optimization
+Balls animation for Windows NT
+___________________________________________________________________________
+version 4.13  23.02.2001
+
+1. Preprint of LISE paper
+
+2. Scattering calculator - version 4.13
+
+3. Mass-separator mode -  version 4.12
+3.1. Cutout of the second dipole
+3.2. New plot dE-X in the dispersive focal plane
+3.3. New opportunity to select the  velocity of reaction products
+3.4. New image of the dialogue “Beam”
+3.5. It is necessary to work:
+
+4. The automized search of two-dimensional peaks in spectra and definition of their characteristics (BI code) - version 4.11
+
+5. Prefragment search -  version 4.10
+5.1. Attempt to extrapolate cross-sections of exotic nuclei
+5.2. Calculation of isotope characteristics with semi empirical formula
+
+___________________________________________________________________________
+version 4.8  19.09.2000
+
+1. Reduction of a fragments output due to reactions
+1.1. Reactions in a target (stripper)
+1.2. Reactions in a wedge
+1.3. Reactions in materials
+
+2. Calculation of the secondary reactions contribution in an output of a fragment
+2.1. Secondary reactions and Optimal target calculations subroutine
+
+3. Other
+3.1. New generator of random numbers
+3.2. Call of a program LISE homepage from dialogue ABOUT
+3.3. Angles of an inclination of a target and a stripper
+3.4. Calculation of optimal target thickness from an inclination of a target
+___________________________________________________________________________
+
+version 4.7   17.08.2000
+
+1. Secondary reactions in a target
+2. Plots
+   2.1. Some distributions for cross section distribution plot
+   2.2. Possibility to plot transmitted fragments with given charge states
+   2.3. Transmission characteristics plot
+   2.4. Manual scale of axis
+3. Mechanism of Reaction
+   3.1. Momentum distributions from reactions
+   3.2. Fragment velocity
+   3.3. Charge states distribution
+4. Other
+   4.1. New configuration files
+   4.2. Total reaction cross section
+   4.3. Database of half-lives
+   4.4. Corrections
+
+___________________________________________________________________________
+
+version 4.6   15.06.2000
+
+1.  DEGRADER AFTER TARGET: CONTRIBUTION IN FRAGMENT DISTRIBUTIONS
+2.  CHARGE STATE DISTRIBUTION IN TRANSMISSION CALCULATION
+3.  DEVELOPMENT
+3.1.  M5678-SPECTROMETER'S CALIBRATION
+3.2.  ENERGY REST IN PHYSICAL CALCULATOR
+3.3.  TOF SHIFT
+3.4. NOTE OF BASE CONFIGURATION USED FOR CALCULATIONS
+3.5.  BUG
+4.  BRIEF DESCRIPTION OF PREVIOUS VERSION (4.5.5-4.5.8) CHANGES
+___________________________________________________________________________
+version 4.5  26.05.2000
+
+1.  MONTE CARLO METHOD FOR TWO-DIMENSIONAL PLOTS (VERSION 4.5)
+1.1. SPEED OF MONTE CARLO ACQUISITION
+1.2.  SETTINGS OF MONTE CARLO METHOD FOR TWO-DIMENSIONAL PLOTS
+1.2.1.  Distribution compression for Monte Carlo plot
+1.2.2.  Pixel for one event for Monte Carlo plot
+1.2.3.  Resolutions and thickness defects
+2.  IN-BUILT CUBIC SPLINE PROCEDURE (VERSION 4.4)
+2.1.  TRANSFORMATION OF DISTRIBUTIONS
+2.2.  EDGE'S EFFECTS
+3.  DEVELOPMENT
+3.1.  DIFFERENT METHODS TO DRAW ONE-DIMENSIONAL PLOTS
+3.2.  DIMENSION OF DISTRIBUTIONS
+3.3. NEW PLOTS
+3.4.  MODE "AUTO" FOR THE WIEN FILTER AND D6-DIPOLE CALCULATIONS
+3.5.  NOTE OF BASE CONFIGURATION USED FOR CALCULATIONS
+3.6.  BUGS
+3.6.1.  Energy loss calculation in thin material
+3.6.2.  Calculations with a primary beam in dialogues TOOLS and Physical calculator
+___________________________________________________________________________
+
+version 4.3 1. Two possibility to calculate angular transmission (Dialog "Acceptances")
+12-04-00        a. rectangle acceptance (like it was in DOS-version)
+            b. gaussian acceptance  (beginning from v.4.0)
+        Default is rectangle acceptance mode. Previous version files will be
+        immediately recalculated.
+        2. The M5678-spectrometer(at Dubna) plot has been added
+        3. Pictures in the dialogues "Curved degrader" & "Angle on the target"
+        has been corrected.
+        4. The Bug in the dialog "Beam" (the button "Table of Nuclides" didn't
+        work) has been corrected.
+        5. Calibrations of all LISE's magnets have been added.
+        6. Calibrations of setting of the angle on the LISE's target has been
+        corrected.
+
+version 4.2.5   Calculation of material thickness between start energy and energy
+07-04-00    rest has been added in the Physical Calculator.
+
+version 4.2.4   Utilites -> LISE3's calibration (dipoles, Wien-filter)
+06-04-00    Transformation between values of Brho, B real(affiche),B red(lu), I(Amper)
+        for the LISE dipoles D3.DP1(D3) and D3.DP2(D4).
+
+version 4.2.3   Utilites -> Curved degrader
+05-04-00    Calculation and plots of curved degrader profiles for different
+        operating modes (achromatic, monochromatic, homogeneous).
+
+version 4.2.2   Utilites -> Calculation of angle on the LISE target
+04-04-00    calculation magnetic fields (also dipoles currents ) of two dipoles
+        to get the determined angle on the target
+
+version 4.2.1   Energy distribution plot after wedge has been corrected.
+03-04-00
+
+version 4.2
+30-03-00
+
+    1. New Dimension « kW » to enter an intensity of the primary beam
+        The new possibility to enter an intensity of
+        the primary beam has been incorporated.
+        The intensity is set via the power
+        of beam in kW. User may observe also in the
+        dialog « Beam »  the separable power beam in the target.
+
+
+    2. New result file - Energy, TOF, Energy Loss in materials
+
+    3. Configuration files
+        Some new configurations files have been added ,
+        another one have been corrected accurately.
+    4. « Unbound » - new characteristic mode to plot in the nuclide chart
+
+    5. New command - Transmission calculation of nuclei chosen by previous
+      command Area Transmission Calculation.
+
+          The code clean previous calculations after any changes
+          of target, beam, wedge and spectrometer’s characteristics.
+          User is obliged to repeat a choice of the nuclei
+          area for next calculations. From now, it is possible
+          to repeat previous transmission
+          calculation simply clicking on an icon for the command
+          « Previous Area Transmission Calculation ».
+
+    6. New plot A/Q - Y (position in the the final focal point after the Wien filter)
+    7. Corrections
+      7.1. B.Blank’s modification of the cross section parametrization - 4 (EPAX 2.15) to
+      treat more correctly pick-up reactions. ()
+      7.2. revision of the nuclide table
+      7.3. changes MeV/A to AMeV
+      7.4. revision of half-lives in the nuclides database
+      7.5. correction of the charge distribution 1 (Leon et al. ) for high energy
+      7.6. bug in the animation subroutine
+
+
+        VERSION 4.1
+
+
+
+4.0.30                      Menu "Calculations"
+16-02-00   1.  Reaction's kinematics (two body) relativistic calculations.
+               User may set excitation energy of outgoing fragments.
+               Plots ("ThetaFragment in CMS & Theta Lab"  and
+              "ThetaFragment in CMS & Energy Lab" ) have been added.
+          2. Reaction's characteristics dialog was created
+
+4.0.29
+11-02-00
+                  1.  New Ion charge state distribution for low energy has been added.
+                        (K.Shima et al., NIM 200 (1982) 605)
+                  2.  New plot - "Average  charge state plot"
+                  3. In the dialog "Physical calculator" user may observe average charge
+                     state of selected ion after materilas
+
+4.0.25        1.  Some Sound application has been inserted into the code
+01-02-00    2. The banner of laboratories has been inserted in the left-bottom window.
+
+ 4.0.19    Struggle with bugs
+ 22-01-00
+                  1.  If You try to calculate something  with version
+                     older 4.0.18 using the Energy loss method=1
+                     (Ziegler) You'll get a mistake..... Unfortunately,
+                     after change pow(x,y) -> exp((y)*log(x)) due to
+                     problems with emulator of Windows on Mac, we have
+                     got it.... if x=0... pow(0,y)=0, but log(0) is
+                     error! It has been corrected...
+                  2.  The LISE code sets "zero" momentum dispersion equal
+                     to 0.1. But it was made as if(dispersion < 0.1)
+                     dispersion=0.1 But some configurations has negative
+                     dispersion, and the program also set their equal to
+                     0.1  Nowadays , if( fabs(dispersion) < 0.1)
+                     dispersion=0.1 and if the program opens old file
+                     with wrong dispersion  User immediately receive the
+                     message "Dispersion is wrong! Check!"
+                  3.  Range distribution plot has been corrected
+
+ 4.0.17       * Different profiles of a degrader (wedge) in the
+ 20-01-00       intermediate dispersive focal plane
+                     Version 4.0.17 description
+                     http://dnr080.jinr.ru/LISE/changes_4_0_17.html
+
+                [Image]
+                     changes_4_0_17.doc (MS Word)
+
+ 4.0.14       * Possibility to calculate the full spectrometer matrix
+              * Calculation of the beam vector in the IDFP and Final
+                Focal Point
+              * Input new parameters x/q and y/j in the optical matrices
+                to calculate transmission.
+                     see picture "Optic.gif"
+
+ 4.0.10       * Global reconstruction of modules to calculate
+                transmission
+              * Remake two and make new one " Brho-separation plot "
+                   o Real Brho plot immediately after target
+                   o Horizontal distribution in IDFP in Tm (as was
+                     initially)
+                   o Horizontal distribution in IDFP in mm (as was made
+                     in October, 1999)
+              * Decide a problem " large object on the target and global
+                unachromatism (chromatism)
+              * Input Wien angular acceptance
+              * Make angular distribution before the Wien-filter
+              * Make " block " structure in the code to calculate
+                transmission.
+              * Make a possibility to choose a X-plane or Y-plane
+                velocity selection.
+              * The bug of TOF-calculation in the dialog " GOODS " and
+                the plot " dE-TOF ".
+
+ 4.0.9        * Verify all new subroutines of energy loss calculation for
+                both methods to
+                   o different energy
+                   o gaseous and solid media
+                   o compounds
+              * Make a warning "Save Changes in file" before
+                   o to exit from the programme
+                   o to load another file
+
+ 4.0.8        * Solve the problem with "edge's" effect of Range's plots.
+              * Solve the problem with the dialog "Calibration" (Dialog
+                change a thickness of setting detectors) and for the
+                Range Plot if User takes a detector set not at 0 degrees.
+              * Input additional energy loss calculation method on the
+                base H-parameterization.
+              * Input a possibility to calculate energy loss into gaseous
+                media.
+              * Make additional component of energy loss : nuclear energy
+                stopping powers, that it is very important for low-energy
+                particles and for gaseous media.
+              * Make tables of ranges beginning from 10 KeV/A to work
+                with low-energy particles.
+              * Make a dialog to choose a compound target from the list
+                of all possible compounds on the base of Ziegler compound
+                file
+                     see picture "LOSS.gif"
+
+ 4.0.7        * Make an identification table of mouse position (Nucleus
+                name, Events, dE,E, TOF) for bidimensional plots like it
+                was in a DOS-version. (also X,Y -identification for
+                one-dimensional plots).
+
+ 4.0.3        * Make COMPOSITE TARGETS and MATERIALS.
+              * Make a new format of LISE-file due to introduction of new
+                class "compounds" in the code .
+              * LISE-files of version 3.* are readable by the code with
+                version higher than 4.0.3
+              * LISE-files of versions 4.0.0 - 4.0.2 are not readable by
+                the code with version higher than 4.0.3
+              * Increase the nuclides isotopes up to Z=130 and N=200.
+              * Approximate ranges for Z=104-130 on the base of work
+                F.Hubert et al , AD & NDT 46 (1990) 1.
+              * Input ranges for H on the base of work L.C.Northclifee
+                and R.F.Schilling, NDT A7 (1970) 233.
+              * Correct " old " and input new LISE-configurations files
+                for different setups.
+                     see picture "LOSS.gif"
+
+ 3.9.5        * Zoom for plots (Clear Zoom).
+
+ 3.9.4        * Correct energy straggling. (Error in NIM A257!!! )
+              * Input correctly energy straggling in a wedge.
+
+ 3.9.2        * Make a possibility to view and edit the in-built
+                database.
+              * Input calculated values in the database for some isotopes
+                of interest (25-30O, *F, *Ne)
+                     see picture "Database.gif"
+
+ 3.9.1        * Plots of data (S1n, S2n, S1p, S2p, T1/2, Qalpha,
+                Beta-decay, Mass excess) from the in-built database for
+                constant Z,N,A,N-Z.
+                     see picture "Database.gif"
+
+ 3.8.     22.09.99
+          1. there are possibilities to switch on & switch off window
+          "3d-balls animation" and "Navigation map". These settings are
+          written in the "lise.ini" also as all settings of "preference"
+          menu and "plot" menu. Therefore nowadays a lise data-file is
+          shorter due to absence of these settings.
+          2. The new EPAX 2.15 is default. This final version of EPAX
+          parameterization (R.Summerer & B.Blank) to be printed (PRL ?)
+
+ 3.7.     09.09.99
+          1. One bug was to work under WinNT
+          2. Navigation map has been modified
+          3. It has been added one option for two-dimensional plots:
+          changing X-and Y-axis
+
+ 3.6.     Navigation Map !!!!! [Image]
+
+ 3.5.     01.07.99
+          The directories "Range" and "Isotopes" don't exist!!! All
+          tabulated ranges in the new version are written in the binary
+          file "range.bin" which is found in the LISE directory. The file
+          of the nuclide chart "table.iso" is found also in the LISE
+          directory. You may delete the directories "range" and "isotope"
+          using the new version. Default cross section parameterization
+          is 3 - "EPAX 2.13 : K.Summerer et B.Blank (1999)
+
+ 3.4.4.   24.06.99
+          1. User may save plot's data to file clicking on the special
+          icon in process of work with one-dimensional plots. Data in
+          this TXT-file are separated by the symbol "TAB"
+          2. The bug (Energy loss into the material defined by User ) in
+          the menu GOODIES has been found and correct.
+          3. Configuration files of the fragment-separator COMBAS [NIM
+          A426 (1999) 605-617] and the M5678 spectrometer at Dubna
+          (http://dnr080.jinr.ru/project/spectrometer_fobos/tz.htm) have
+          been added to the list of config-files.
+
+ 3.4.     [Image]Version 3.4 - Description
+
+          19.05.99  http://dnr080.jinr.ru/changes34/changes34.html
+
+           25.03.99  one bag with vertical angular distribution with the
+          option "Wien Filter".
+          Please, check after reading of old files (created before
+          25.03.99 ) next parameters
+ 3.3.06   menu SLITS
+              slits before target (collimator)   ( if You don't have a
+          collimator it's necessary to set at least 3 times more than
+          beam size)
+           menu OPTICS
+                     x-beam size, y-beam size
+
+          18.01.99 In-built database. Clicking on an isotope of interest
+          in the table of nuclides by a right button of a mouse It
+          possible to see a transmission of given isotope, its
+          characteristics (Mass excess, Binding energy, Beta-decay
+          energy, S(2n), S(2p), Q(alpha), S(n), S(p), T1/2), and energy
+ 3.3.0    after second dipole.
+          For the LISE database it was used the next data sheets:
+          1. THE 1995 ATOMIC MASS EVALUATION by G.Audi and A.H.Wapstra
+          Mass excess, Binding energy, Beta-decay energy, S(2n), S(2p),
+          Q(alpha), S(n), S(p) - (recommended values)
+          2. The code "NUCLEUS" - I.Duflo, G.Audi et al, CSNSM, Orsay
+          half-lives (T1/2).
+
+          The Optical parameters are set as the Transport matrices.
+ 3.2.0    It was added the phase space and the average momentum of the
+          input beam for calculations. /look help of the dialog "Optic"/
+
+ 3.1.06   New dialog D6 permits to calculate the angle ot the platform
+          turning and the magnetic field of the dipole D6 /look help of
+          the dialog "D6"/
+
+ 3.1.05   All dialogs have the button "Help" with respective reference in
+          the HLP-file
+
+ 3.1.04   clicking on the right button of mouse on a nucleus in the the
+          tables of nuclides You may see results of calculation for this
+          chosen isotope in a new window
+
+ 3.1.03d  "bags" in the dialog "Preferences"
+
+ 3.1.03   it's possible to execute the program from a command line with
+          parameters. Click on a LISE-datafile to load it into the LISE
+          program. before make next steps: choose in the Explorer:
+          Options->File Types; make the program LISE according to the
+          extension *.LIZ to open LISE datafiles. Beginning from this
+          version a results-file is found in the same directory its
+          "parent" data-file where was save.
+
+ 3.1.02b  it was corrected reading the BMP-file of the LISE spectrometer.
+
+ 3.1.02a  it was corrected:
+          a) printing of bidimensional plot - a number of count per
+          secund for given isotope in log-scale is shown on the right of
+          element name
+          b) the optimal plot for with the option "charge state"
+          c) the view of a width of slits and an acceptance momentum in
+          the "Setup" Window
+
+ 3.1.02   some problems were avoided with a view of dialogues for small
+          fonts. Nowadays, dialogues work well for little fonts as well as
+          large fonts which are set for the Display(System settings)
+
+ 3.1.01   this version is working under Windows NT
